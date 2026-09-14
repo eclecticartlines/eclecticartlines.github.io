@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eclectic Art Lines — Mobile Apps & Games</title>
+  <meta name="description" content="Independent mobile studio creating thoughtful apps and games. Based in Istanbul." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #28468C;
+      --blue-dark:  #1a2f5e;
+      --blue-mid:   #1e3a7a;
+      --cream:      #FFF0BE;
+      --cream-dim:  rgba(255,240,190,0.7);
+      --white:      #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: var(--white);
+      color: var(--blue-dark);
+      line-height: 1.7;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--blue);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-logo {
+      width: min(520px, 80vw);
+      margin-bottom: 1.5rem;
+      opacity: 0.95;
+    }
+
+    .hero-sub {
+      font-family: Georgia, serif;
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      color: var(--cream-dim);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-tagline {
+      font-family: Georgia, serif;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: var(--cream);
+      font-style: italic;
+      font-weight: normal;
+      max-width: 42ch;
+      margin: 0 auto 3rem;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--cream-dim);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .hero-scroll::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 40px;
+      background: var(--cream-dim);
+      margin: 0.5rem auto 0;
+    }
+
+    /* ── SECTION BASE ── */
+    section {
+      padding: 5rem 2rem;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: Georgia, serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: var(--blue);
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+      opacity: 0.6;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: normal;
+      color: var(--blue-dark);
+      margin-bottom: 1rem;
+      line-height: 1.25;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: #2a3a5c;
+      max-width: 62ch;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    /* ── APPS ── */
+    .apps-section {
+      background: #f7f8fc;
+      max-width: 100%;
+      padding: 5rem 2rem;
+    }
+    .apps-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .app-card {
+      background: var(--white);
+      border: 1px solid rgba(40,70,140,0.1);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .app-card h3 {
+      font-family: Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: normal;
+      color: var(--blue-dark);
+    }
+
+    .app-card p {
+      font-size: 0.9rem;
+      color: #4a5a7a;
+      margin: 0;
+      max-width: none;
+    }
+
+    .app-card .tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--blue);
+      opacity: 0.6;
+    }
+
+    .app-link {
+      display: inline-block;
+      margin-top: auto;
+      padding-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--blue);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(40,70,140,0.3);
+      align-self: flex-start;
+      transition: border-color 0.2s;
+    }
+    .app-link:hover { border-color: var(--blue); }
+
+    .app-card.coming-soon {
+      opacity: 0.55;
+    }
+
+    /* ── ABOUT ── */
+    .about-accent {
+      width: 48px;
+      height: 2px;
+      background: var(--blue);
+      margin-bottom: 2rem;
+      opacity: 0.35;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--blue-dark);
+      color: var(--cream-dim);
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    footer .footer-logo {
+      width: 180px;
+      margin-bottom: 1.5rem;
+      opacity: 0.8;
+    }
+
+    footer nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    footer nav a {
+      color: var(--cream-dim);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    footer nav a:hover { color: var(--cream); }
+
+    footer p {
+      font-size: 0.78rem;
+      color: rgba(255,240,190,0.35);
+      max-width: none;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .apps-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img src="logo.png" alt="Eclectic Art Lines" class="hero-logo" />
+    <p class="hero-sub">Art Lines Studio &nbsp;·&nbsp; Istanbul</p>
+    <p class="hero-tagline">Small studio making mobile apps and games with care.</p>
+    <span class="hero-scroll">scroll</span>
+  </header>
+
+  <!-- APPS -->
+  <div class="apps-section">
+    <div class="apps-inner">
+      <p class="section-label">Applications</p>
+      <h2>What we make</h2>
+      <div class="apps-grid">
+
+        <div class="app-card">
+          <span class="tag">Puzzle · Game</span>
+          <h3>Eclectic Puzzle</h3>
+          <p>A calming jigsaw puzzle game with original artwork. Pieces, patience, and quiet satisfaction.</p>
+          <a class="app-link" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines" target="_blank" rel="noopener">Google Play</a>
+        </div>
+
+        <div class="app-card">
+          <span class="tag">Coloring · Game</span>
+          <h3>Eclectic Coloring</h3>
+          <p>An adult coloring book with hand-drawn illustrations. Color by number or free-form — your pace.</p>
+          <a class="app-link" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines.coloring" target="_blank" rel="noopener">Google Play</a>
+        </div>
+
+        <div class="app-card coming-soon">
+          <span class="tag">Casual · Game</span>
+          <h3>Cozy Clean Reveal</h3>
+          <p>A satisfying ASMR-style cleaning game. Coming soon.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section>
+    <p class="section-label">About</p>
+    <div class="about-accent"></div>
+    <h2>Independent, intentional.</h2>
+    <p>Eclectic Art Lines is a one-person mobile studio run by an artist and developer based in Istanbul. Every app is designed and built from scratch — no templates, no shortcuts.</p>
+    <p>The studio's work sits at the intersection of visual art and interactive design: games that feel handmade, apps that respect your attention.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="logo.png" alt="Eclectic Art Lines" class="footer-logo" />
+    <nav>
+      <a href="privacy/puzzle.html">Privacy — Puzzle</a>
+      <a href="privacy/coloring.html">Privacy — Coloring</a>
+      <a href="mailto:eclecticartlines@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 Eclectic Art Lines. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
