@@ -3,322 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eclectic Art Lines — Mobile Apps & Games</title>
-  <meta name="description" content="Independent mobile studio creating thoughtful apps and games. Based in Istanbul." />
+  <title>Eclectic Art Lines — Indie Mobile Games & Apps</title>
+  <meta name="description" content="Calm, handmade mobile games and apps by Eclectic Art Lines — an independent full-cycle developer from Istanbul. Eclectic Puzzle, Eclectic Coloring and more on Google Play." />
+  <meta property="og:title" content="Eclectic Art Lines — Indie Mobile Games & Apps" />
+  <meta property="og:description" content="Calm, handmade mobile games and apps by an independent developer from Istanbul." />
+  <meta property="og:image" content="https://eclecticartlines.github.io/favicon.png" />
+  <meta property="og:url" content="https://eclecticartlines.github.io/" />
+  <meta name="theme-color" content="#1a2f5e" />
   <link rel="icon" type="image/png" href="favicon.png" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --blue:       #28468C;
-      --blue-dark:  #1a2f5e;
-      --blue-mid:   #1e3a7a;
-      --cream:      #FFF0BE;
-      --cream-dim:  rgba(255,240,190,0.7);
-      --white:      #ffffff;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      background: var(--white);
-      color: var(--blue-dark);
-      line-height: 1.7;
-    }
-
-    /* ── HERO ── */
-    .hero {
-      background-image: url('fon.png');
-      background-size: cover;
-      background-position: center;
-      min-height: 30vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2.5rem 2rem;
-      text-align: center;
-      position: relative;
-    }
-
-    .hero-logo {
-      width: min(600px, 400vw);
-      opacity: 0.95;      
-    }
-
-    .hero-sub {
-      font-family: Georgia, serif;
-      font-size: clamp(0.75rem, 1.5vw, 0.9rem);
-      color: var(--cream-dim);
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      font-weight: normal;
-      margin-top: 1rem;
-      text-shadow: 0 1px 6px rgba(0,0,0,0.5);
-    }
-
-    /* ── SECTION BASE ── */
-    section {
-      padding: 5rem 2rem;
-      max-width: 860px;
-      margin: 0 auto;
-    }
-
-    .section-label {
-      font-family: Georgia, serif;
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      color: var(--blue);
-      text-transform: uppercase;
-      margin-bottom: 2.5rem;
-      opacity: 0.6;
-    }
-
-    h2 {
-      font-family: Georgia, serif;
-      font-size: clamp(1.6rem, 4vw, 2.2rem);
-      font-weight: normal;
-      color: var(--blue-dark);
-      margin-bottom: 1rem;
-      line-height: 1.25;
-    }
-
-    p {
-      font-size: 1.05rem;
-      color: #2a3a5c;
-      max-width: 62ch;
-      line-height: 1.8;
-      margin-bottom: 1rem;
-    }
-
-    /* ── APPS ── */
-    .apps-section {
-      background: #f7f8fc;
-      max-width: 100%;
-      padding: 5rem 2rem;
-    }
-    .apps-inner {
-      max-width: 860px;
-      margin: 0 auto;
-    }
-
-    .apps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-
-    .app-card {
-      background: var(--white);
-      border: 1px solid rgba(40,70,140,0.1);
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .app-card h3 {
-      font-family: Georgia, serif;
-      font-size: 1.15rem;
-      font-weight: normal;
-      color: var(--blue-dark);
-    }
-
-    .app-card p {
-      font-size: 0.9rem;
-      color: #4a5a7a;
-      margin: 0;
-      max-width: none;
-    }
-
-    .app-card .tag {
-      font-size: 0.72rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--blue);
-      opacity: 0.6;
-    }
-
-    .app-link {
-      display: inline-block;
-      margin-top: auto;
-      padding-top: 1rem;
-      font-size: 0.85rem;
-      color: var(--blue);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(40,70,140,0.3);
-      align-self: flex-start;
-      transition: border-color 0.2s;
-    }
-    .app-link:hover { border-color: var(--blue); }
-
-    .app-card.coming-soon {
-      opacity: 0.55;
-    }
-
-    .app-icon {
-      width: 72px;
-      height: 72px;
-      border-radius: 16px;
-      object-fit: cover;
-      margin-bottom: 0.25rem;
-    }
-
-    /* ── SOCIAL ── */
-    .social-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .social-links a {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      color: var(--cream-dim);
-      text-decoration: none;
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
-      transition: color 0.2s;
-    }
-    .social-links a:hover { color: var(--cream); }
-    .social-links svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
-
-    /* ── ABOUT ── */
-    .about-accent {
-      width: 48px;
-      height: 2px;
-      background: var(--blue);
-      margin-bottom: 2rem;
-      opacity: 0.35;
-    }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--blue-dark);
-      color: var(--cream-dim);
-      text-align: center;
-      padding: 3rem 2rem;
-    }
-
-    footer .footer-logo {
-      width: 300px;
-      margin-bottom: 1.5rem;
-      opacity: 0.8;
-    }
-
-    footer nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    footer nav a {
-      color: var(--cream-dim);
-      text-decoration: none;
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-    footer nav a:hover { color: var(--cream); }
-
-    footer p {
-      font-size: 0.78rem;
-      color: rgba(255,240,190,0.35);
-      max-width: none;
-      margin: 0;
-    }
-
-    @media (max-width: 600px) {
-      .apps-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- HERO -->
   <header class="hero">
-    <img src="logo.png" alt="Eclectic Art Lines" class="hero-logo" />
-    <p class="hero-sub">Eclectic Art Lines &nbsp;·&nbsp; Istanbul</p>
+    <img src="logo.png" alt="Eclectic Art Lines" class="hero-logo" width="1769" height="647" />
+    <p class="hero-sub">Indie mobile games &amp; apps &nbsp;·&nbsp; Istanbul</p>
   </header>
 
   <!-- APPS -->
-  <div class="apps-section">
-    <div class="apps-inner">
-      <p class="section-label">Applications</p>
-      <h2>What we make</h2>
+  <section class="tint" id="apps">
+    <div class="wrap">
+      <p class="label">Games &amp; apps</p>
+      <h2>What I make</h2>
+      <p>Quiet games and useful little apps for Android. No sign-ups, no clutter — just open and play.</p>
+
       <div class="apps-grid">
 
-        <div class="app-card">
-          <img src="icons/puzzle.png" alt="Eclectic Puzzle icon" class="app-icon" />
-          <span class="tag">Puzzle · Game</span>
-          <h3>Eclectic Puzzle</h3>
+        <article class="app-card">
+          <div class="app-head">
+            <img src="icons/puzzle.png" alt="" class="app-icon" width="64" height="64" />
+            <div>
+              <span class="tag">Puzzle · Game</span>
+              <h3>Eclectic Puzzle</h3>
+            </div>
+          </div>
+          <span class="status live">On Google Play</span>
           <p>A calming jigsaw puzzle game with original artwork. Pieces, patience, and quiet satisfaction.</p>
-          <a class="app-link" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines" target="_blank" rel="noopener">Google Play</a>
-        </div>
+          <div class="app-actions">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
+              Google Play
+            </a>
+            <a class="small-link" href="privacy/puzzle.html">Privacy</a>
+          </div>
+        </article>
 
-        <div class="app-card">
-          <img src="icons/coloring.png" alt="Eclectic Coloring icon" class="app-icon" />
-          <span class="tag">Coloring · Game</span>
-          <h3>Eclectic Coloring</h3>
+        <article class="app-card">
+          <div class="app-head">
+            <img src="icons/coloring.png" alt="" class="app-icon" width="64" height="64" />
+            <div>
+              <span class="tag">Coloring · Game</span>
+              <h3>Eclectic Coloring</h3>
+            </div>
+          </div>
+          <span class="status live">On Google Play</span>
           <p>An adult coloring book with hand-drawn illustrations. Color by number or free-form — your pace.</p>
-          <a class="app-link" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines.coloring" target="_blank" rel="noopener">Google Play</a>
-        </div>
+          <div class="app-actions">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines.coloring" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
+              Google Play
+            </a>
+            <a class="small-link" href="privacy/coloring.html">Privacy</a>
+          </div>
+        </article>
 
-        <div class="app-card coming-soon">
-          <img src="icons/cozyclean.png" alt="Cozy Clean Reveal icon" class="app-icon" />
-          <span class="tag">Casual · Game</span>
-          <h3>Cozy Clean Reveal</h3>
-          <p>A satisfying ASMR-style cleaning game. Coming soon.</p>
-        </div>
+        <article class="app-card">
+          <div class="app-head">
+            <img src="icons/cozyclean.png" alt="" class="app-icon" width="64" height="64" />
+            <div>
+              <span class="tag">Casual · Game</span>
+              <h3>Cozy Clean Reveal</h3>
+            </div>
+          </div>
+          <span class="status">In testing</span>
+          <p>A satisfying ASMR-style cleaning game. Carpets, tiles, doors — all covered in 21 kinds of mess: stains, streaks, footprints, hair, cobwebs and even flies. Scrub it all away and watch everything shine.</p>
+          <div class="app-actions">
+            <a class="small-link" href="privacy/cozyclean.html">Privacy</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <div class="app-head">
+            <img src="icons/reader.png" alt="" class="app-icon" width="64" height="64" />
+            <div>
+              <span class="tag">Reader · App</span>
+              <h3>Photo Voice</h3>
+            </div>
+          </div>
+          <span class="status">Coming soon</span>
+          <p>Photograph a page or open a PDF, EPUB or FB2 — and listen to it read aloud. Everything happens on your phone.</p>
+          <div class="app-actions">
+            <a class="small-link" href="privacy/reader.html">Privacy</a>
+          </div>
+        </article>
 
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- ABOUT -->
-  <section>
-    <p class="section-label">About</p>
-    <div class="about-accent"></div>
-    <h2>Independent, intentional.</h2>
-    <p>Eclectic Art Lines is a one-person mobile studio run by an artist and developer based in Istanbul. Every app is designed and built from scratch — no templates, no shortcuts.</p>
-    <p>The studio's work sits at the intersection of visual art and interactive design: games that feel handmade, apps that respect your attention.</p>
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <p class="label">About</p>
+        <h2>One developer, full cycle.</h2>
+        <p>Eclectic Art Lines is me — an independent mobile developer based in Istanbul. Every game and app here is made by one person from start to finish: the idea, the design, the code, the testing and the release.</p>
+        <p>I come from graphic design and pre-press production, so I care a lot about how things look and feel: calm colors, clean screens, nothing that shouts at you.</p>
+      </div>
+      <ul class="facts">
+        <li>Games built with Unity, apps with Flutter</li>
+        <li>No accounts or sign-ups in any of my apps</li>
+        <li>Each game links to the others — if you like one, try the next</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- HELP -->
+  <section class="tint" id="help">
+    <div class="wrap">
+      <p class="label">Help</p>
+      <h2>Something not working?</h2>
+      <p>Found a bug, lost your progress, or have an idea for a game? I read every message myself.</p>
+      <div class="contact-row">
+        <a class="btn" href="support.html">Support &amp; FAQ</a>
+        <a class="btn ghost" href="mailto:eclecticartlines@gmail.com">Write to me</a>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <img src="logo.png" alt="Eclectic Art Lines" class="footer-logo" />
+    <img src="logo.png" alt="Eclectic Art Lines" class="footer-logo" width="1769" height="647" />
 
-    <!-- Social links -->
-    <div class="social-links">
+    <div class="social">
       <a href="https://www.instagram.com/eclecticartlines/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         Instagram
       </a>
       <a href="https://www.tiktok.com/@eclectic.art.lines" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>
         TikTok
-      </a>     
-      <span>✉ eclecticartlines [at] gmail.com</span>
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        eclecticartlines [at] gmail.com
+      </a>
+      <a href="mailto:eclecticartlines@gmail.com">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        eclecticartlines@gmail.com
       </a>
     </div>
 
-    <!-- Privacy links -->
     <nav>
+      <a href="support.html">Support</a>
       <a href="privacy/puzzle.html">Privacy — Puzzle</a>
       <a href="privacy/coloring.html">Privacy — Coloring</a>
       <a href="privacy/cozyclean.html">Privacy — Cozy Clean</a>
+      <a href="privacy/reader.html">Privacy — Photo Voice</a>
     </nav>
-    <p>© 2026 Eclectic Art Lines. All rights reserved.</p>
+    <p class="copy">© 2026 Eclectic Art Lines</p>
   </footer>
 
 </body>
