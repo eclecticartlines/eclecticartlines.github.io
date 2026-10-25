@@ -608,6 +608,8 @@
     (function () {
       var sections = Array.prototype.slice.call(document.querySelectorAll('main[data-lang]'));
       var buttons = Array.prototype.slice.call(document.querySelectorAll('nav.langs button'));
+      var backLink = document.querySelector('header a');
+      var backText = {"en": "← Back to main page", "ru": "← На главную", "kk": "← Басты бетке", "tr": "← Ana sayfaya dön", "de": "← Zur Startseite", "fr": "← Retour à l'accueil", "es": "← Volver a la página principal", "it": "← Torna alla pagina principale", "pt": "← Voltar à página principal", "ro": "← Înapoi la pagina principală", "id": "← Kembali ke halaman utama"};
       var available = sections.map(function (s) { return s.getAttribute('data-lang'); });
 
       function show(code) {
@@ -616,6 +618,7 @@
         buttons.forEach(function (b) {
           b.setAttribute('aria-current', String(b.getAttribute('data-lang') === code));
         });
+        if (backLink && backText[code]) { backLink.textContent = backText[code]; }
         document.documentElement.lang = code;
         try { localStorage.setItem('eal-privacy-lang', code); } catch (e) {}
       }

@@ -3,23 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Eclectic Puzzle</title>
+  <title>Privacy Policy — Art Jigsaw: Photo Puzzle Maker</title>
+  <meta name="description" content="Privacy policy for the Art Jigsaw: Photo Puzzle Maker mobile app by Eclectic Art Lines. No ads, photos processed on your device, one-time purchase." />
   <link rel="icon" type="image/png" href="../favicon.png" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --blue: #28468C; --blue-dark: #1a2f5e; --cream: #FFF0BE; }
-    body { font-family: Georgia, serif; background: #fff; color: var(--blue-dark); line-height: 1.8; }
+    body { font-family: Georgia, "Noto Serif", "DejaVu Serif", serif; background: #fff; color: var(--blue-dark); line-height: 1.8; }
     header {
       background: var(--blue);
       padding: 2rem;
       display: flex;
       align-items: center;
       gap: 1.5rem;
+      flex-wrap: wrap;
     }
     header img { height: 40px; }
     header a { color: var(--cream); text-decoration: none; font-size: 0.85rem; opacity: 0.8; }
     header a:hover { opacity: 1; }
-    main { max-width: 720px; margin: 0 auto; padding: 4rem 2rem; }
+    nav.langs {
+      max-width: 720px;
+      margin: 2rem auto 0;
+      padding: 0 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    nav.langs button {
+      font: inherit;
+      font-size: 0.82rem;
+      line-height: 1.4;
+      padding: 0.35rem 0.7rem;
+      border: 1px solid #ccd3e2;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--blue);
+      cursor: pointer;
+    }
+    nav.langs button:hover { border-color: var(--blue); }
+    nav.langs button[aria-current="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
+    main { max-width: 720px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
     h1 { font-size: 1.8rem; font-weight: normal; margin-bottom: 0.5rem; color: var(--blue-dark); }
     .meta { font-size: 0.8rem; color: #888; margin-bottom: 3rem; }
     h2 { font-size: 1.1rem; font-weight: normal; color: var(--blue); margin: 2.5rem 0 0.75rem; }
@@ -27,6 +50,7 @@
     ul { padding-left: 1.5rem; }
     a { color: var(--blue); }
     footer { text-align: center; padding: 2rem; font-size: 0.78rem; color: #aaa; }
+    main[hidden] { display: none; }
   </style>
 </head>
 <body>
@@ -34,30 +58,66 @@
     <img src="../logo.png" alt="Eclectic Art Lines" />
     <a href="../index.html">← Back to main page</a>
   </header>
-  <main>
-    <h1>Privacy Policy</h1>
-    <p class="meta">Eclectic Puzzle &nbsp;·&nbsp; Last updated: September 2026</p>
 
-    <p>This Privacy Policy describes how Eclectic Art Lines ("we", "us", or "our") handles information in connection with the Eclectic Puzzle mobile application.</p>
+  <nav class="langs" aria-label="Language">
+    <button type="button" data-lang="en">English</button>
+    <button type="button" data-lang="ru">Русский</button>
+    <button type="button" data-lang="kk">Қазақша</button>
+    <button type="button" data-lang="tr">Türkçe</button>
+    <button type="button" data-lang="de">Deutsch</button>
+    <button type="button" data-lang="fr">Français</button>
+    <button type="button" data-lang="es">Español</button>
+    <button type="button" data-lang="it">Italiano</button>
+    <button type="button" data-lang="pt">Português</button>
+    <button type="button" data-lang="ro">Română</button>
+    <button type="button" data-lang="id">Bahasa Indonesia</button>
+  </nav>
+
+
+  <main data-lang="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Last updated: October 2026</p>
+
+    <p>This Privacy Policy describes how Eclectic Art Lines ("we", "us", or "our") handles information in connection with the Art Jigsaw: Photo Puzzle Maker mobile application ("the app").</p>
+
+    <h2>No Advertising</h2>
+    <p>The app shows no advertising of any kind. There are no banners, no video ads, no pop-ups, and no advertising networks. The app does not use your advertising identifier.</p>
 
     <h2>Information We Do Not Collect</h2>
-    <p>Eclectic Puzzle does not collect, store, or transmit any personally identifiable information. We do not require account registration, and we do not have access to your name, email address, or location.</p>
+    <p>The app does not collect, store, or transmit any personally identifiable information. There is no account registration. We do not have access to your name, email address, phone number, contacts, or location.</p>
 
-    <h2>Third-Party Advertising (Google AdMob)</h2>
-    <p>The app uses Google AdMob to display advertisements. AdMob may collect certain data to serve relevant ads, including:</p>
+    <h2>Your Own Photos</h2>
+    <p>The app can turn a photo of yours into a puzzle. You choose that photo yourself, and the app receives only the single picture you pick.</p>
+    <p>The picture is processed entirely on your device: it is cut into pieces locally, by the app, on your phone. It is never uploaded anywhere, never sent to us, and we never see it. We do not run a server for this app and there is nowhere for your photo to go.</p>
+    <p>On Android 13 and later, the system photo picker grants the app access only to the picture you select, and nothing else in your gallery. On older versions of Android the app may ask for photo or storage permission; even then, the app reads only the picture you choose and does not scan, index, or copy the rest of your gallery.</p>
+    <p>Your chosen picture and the puzzle made from it stay on your device and are removed when you delete that puzzle or uninstall the app.</p>
+
+    <h2>One-Time Purchase</h2>
+    <p>The app offers a single one-time purchase that unlocks making puzzles from your own photos. There is no subscription and no recurring charge.</p>
+    <p>All payment processing is handled entirely by Google Play. We do not receive, store, or have access to your payment card details or billing information. Your purchase history is managed through your Google account, and the purchase can be restored on a new device by signing in with the same account.</p>
+
+    <h2>Sharing a Finished Puzzle</h2>
+    <p>When you share a finished puzzle, the image is created on your device and the app opens the standard Android share sheet. You choose the app and the recipient yourself, and the image goes directly from your device to the app you pick. We never see it and never receive a copy. Once sent, the image is handled by that app under its own privacy policy.</p>
+
+    <h2>Data Stored on Your Device</h2>
+    <p>The app stores the following data locally on your device only:</p>
     <ul>
-      <li>Device identifiers (such as Advertising ID)</li>
-      <li>IP address and approximate location</li>
-      <li>Usage data and interaction with ads</li>
+      <li>your progress on each puzzle</li>
+      <li>pictures you have added and the puzzles made from them</li>
+      <li>app settings</li>
+      <li>purchase status (verified through Google Play)</li>
     </ul>
-    <p>This data is collected and processed by Google under their own privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
-    <p>You can opt out of personalised advertising in your device settings (Google Settings → Ads → Opt out of Ads Personalisation).</p>
+    <p>This data never leaves your device and is deleted when you uninstall the app.</p>
+
+    <h2>Works Offline</h2>
+    <p>The app works fully offline. It does not download content, and it does not send anything to any server of ours — we do not operate one for this app.</p>
 
     <h2>Analytics</h2>
-    <p>The app may use Google Play's built-in analytics (Firebase/Play Console) to understand general usage patterns such as session length and crash reports. This data is aggregated and not linked to individual users.</p>
+    <p>The app may use Google Play's built-in analytics (Play Console) to understand general usage patterns such as crash reports and session data. This data is aggregated and not linked to individual users.</p>
 
     <h2>Children's Privacy</h2>
-    <p>Our app is not directed to children under the age of 13. We do not knowingly collect personal information from children.</p>
+    <p>The app is not directed to children under the age of 13, and we do not knowingly collect personal information from children. There is no account creation, no chat, no social features, and no advertising of any kind.</p>
+    <p>Parents and guardians control purchases through their Google Play account. No in-app purchase can be made without authorisation through Google Play's standard parental controls.</p>
 
     <h2>Changes to This Policy</h2>
     <p>We may update this policy from time to time. Changes will be reflected on this page with an updated date.</p>
@@ -65,6 +125,563 @@
     <h2>Contact</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
+
+  <main data-lang="ru" lang="ru" hidden>
+    <h1>Политика конфиденциальности</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Последнее обновление: октябрь 2026</p>
+
+    <p>Эта Политика конфиденциальности описывает, как Eclectic Art Lines («мы») обращается с информацией в связи с мобильным приложением Art Jigsaw: Photo Puzzle Maker («приложение»).</p>
+
+    <h2>Никакой рекламы</h2>
+    <p>Приложение не показывает рекламу ни в каком виде: ни баннеров, ни видеороликов, ни всплывающих окон, ни рекламных сетей. Приложение не использует ваш рекламный идентификатор.</p>
+
+    <h2>Какие данные мы не собираем</h2>
+    <p>Приложение не собирает, не хранит и не передаёт никакие персональные данные. Регистрация не требуется. У нас нет доступа к вашему имени, адресу электронной почты, номеру телефона, контактам или местоположению.</p>
+
+    <h2>Ваши фотографии</h2>
+    <p>Приложение умеет делать пазл из вашей фотографии. Фотографию выбираете вы сами, и приложение получает только ту одну картинку, которую вы выбрали.</p>
+    <p>Картинка обрабатывается целиком на вашем устройстве: приложение режет её на кусочки локально, прямо на телефоне. Она никуда не загружается, нам не отправляется, и мы её не видим. У нас нет сервера для этого приложения — вашей фотографии просто некуда уходить.</p>
+    <p>На Android 13 и новее системный выбор фото даёт приложению доступ только к выбранной вами картинке и ни к чему больше в галерее. На старых версиях Android приложение может запросить разрешение на доступ к фото или хранилищу; но и тогда оно читает только выбранную вами картинку и не сканирует, не индексирует и не копирует остальную галерею.</p>
+    <p>Выбранная картинка и собранный из неё пазл остаются на вашем устройстве и удаляются, когда вы удаляете этот пазл или само приложение.</p>
+
+    <h2>Разовая покупка</h2>
+    <p>В приложении есть одна разовая покупка, которая открывает создание пазлов из ваших собственных фотографий. Подписки нет, повторных списаний нет.</p>
+    <p>Все платежи полностью обрабатывает Google Play. Мы не получаем, не храним и не имеем доступа к данным вашей карты или платёжным реквизитам. История покупок хранится в вашем аккаунте Google, и покупку можно восстановить на новом устройстве, войдя в тот же аккаунт.</p>
+
+    <h2>Отправка собранного пазла</h2>
+    <p>Когда вы делитесь собранным пазлом, изображение создаётся на вашем устройстве, и приложение открывает стандартное окно «Поделиться» Android. Приложение и получателя выбираете вы сами, и изображение уходит напрямую с вашего устройства в выбранное вами приложение. Мы его не видим и не получаем копию. Дальнейшее обращение с изображением регулируется политикой того приложения.</p>
+
+    <h2>Данные на вашем устройстве</h2>
+    <p>Приложение хранит только на вашем устройстве:</p>
+    <ul>
+      <li>прогресс сборки каждого пазла</li>
+      <li>добавленные вами картинки и собранные из них пазлы</li>
+      <li>настройки приложения</li>
+      <li>статус покупки (проверяется через Google Play)</li>
+    </ul>
+    <p>Эти данные никогда не покидают устройство и удаляются вместе с приложением.</p>
+
+    <h2>Работает без интернета</h2>
+    <p>Приложение полностью работает офлайн. Оно не скачивает контент и ничего не отправляет на наши серверы — для этого приложения у нас их нет.</p>
+
+    <h2>Аналитика</h2>
+    <p>Приложение может использовать встроенную аналитику Google Play (Play Console), чтобы понимать общие закономерности использования — например, отчёты о сбоях и данные о сессиях. Эти данные обобщены и не связаны с конкретными пользователями.</p>
+
+    <h2>Дети</h2>
+    <p>Приложение не предназначено для детей младше 13 лет, и мы сознательно не собираем персональные данные детей. В приложении нет регистрации, нет чата, нет социальных функций и нет рекламы в любом виде.</p>
+    <p>Покупками управляют родители и опекуны через свой аккаунт Google Play. Покупка внутри приложения невозможна без подтверждения через стандартный родительский контроль Google Play.</p>
+
+    <h2>Изменения в политике</h2>
+    <p>Мы можем время от времени обновлять эту политику. Изменения будут опубликованы на этой странице с новой датой обновления.</p>
+
+    <h2>Связь с нами</h2>
+    <p>Если у вас есть вопросы об этой Политике конфиденциальности, напишите нам: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
+  </main>
+
+  <main data-lang="kk" lang="kk" hidden>
+    <h1>Құпиялылық саясаты</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Соңғы жаңарту: 2026 жылғы қазан</p>
+
+    <p>Бұл Құпиялылық саясаты Eclectic Art Lines («біз») Art Jigsaw: Photo Puzzle Maker мобильді қосымшасына («қосымша») қатысты ақпаратты қалай өңдейтінін сипаттайды.</p>
+
+    <h2>Жарнама жоқ</h2>
+    <p>Қосымша ешқандай жарнама көрсетпейді: баннер де, бейнежарнама да, қалқымалы терезе де, жарнама желілері де жоқ. Қосымша сіздің жарнамалық идентификаторыңызды пайдаланбайды.</p>
+
+    <h2>Біз жинамайтын ақпарат</h2>
+    <p>Қосымша ешқандай жеке деректі жинамайды, сақтамайды және жібермейді. Тіркелу қажет емес. Бізде сіздің атыңызға, электрондық поштаңызға, телефон нөміріңізге, контактілеріңізге немесе орналасқан жеріңізге қолжетімділік жоқ.</p>
+
+    <h2>Сіздің фотосуреттеріңіз</h2>
+    <p>Қосымша сіздің фотосуретіңізден пазл жасай алады. Фотосуретті өзіңіз таңдайсыз, ал қосымша тек сіз таңдаған сол бір суретті ғана алады.</p>
+    <p>Сурет толықтай сіздің құрылғыңызда өңделеді: қосымша оны телефоныңыздың өзінде, жергілікті түрде бөліктерге бөледі. Ол ешқайда жүктелмейді, бізге жіберілмейді және біз оны көрмейміз. Бұл қосымша үшін бізде сервер жоқ — сіздің фотосуретіңіздің баратын жері де жоқ.</p>
+    <p>Android 13 және одан жаңа нұсқаларда жүйенің фото таңдағышы қосымшаға тек сіз таңдаған суретке қолжетімділік береді, галереядағы басқа ештеңеге емес. Android-тің ескі нұсқаларында қосымша фотоға немесе жадқа рұқсат сұрауы мүмкін; сонда да ол тек сіз таңдаған суретті оқиды, қалған галереяны сканерлемейді, индекстемейді және көшірмейді.</p>
+    <p>Таңдалған сурет пен одан жасалған пазл құрылғыңызда қалады және сол пазлды немесе қосымшаны жойғанда өшіріледі.</p>
+
+    <h2>Бір реттік сатып алу</h2>
+    <p>Қосымшада өз фотосуреттеріңізден пазл жасауды ашатын бір реттік сатып алу бар. Жазылым да, қайталанатын төлем де жоқ.</p>
+    <p>Барлық төлемді толықтай Google Play өңдейді. Біз сіздің карта деректеріңізді немесе төлем мәліметтеріңізді алмаймыз, сақтамаймыз және оларға қолжеткізе алмаймыз. Сатып алу тарихы Google аккаунтыңызда сақталады, сол аккаунтқа кіру арқылы сатып алуды жаңа құрылғыда қалпына келтіруге болады.</p>
+
+    <h2>Жиналған пазлды жіберу</h2>
+    <p>Жиналған пазлмен бөліскенде, сурет сіздің құрылғыңызда жасалады да, қосымша Android-тің стандартты «Бөлісу» терезесін ашады. Қосымша мен алушыны өзіңіз таңдайсыз, ал сурет құрылғыңыздан тікелей өзіңіз таңдаған қосымшаға барады. Біз оны көрмейміз және көшірмесін алмаймыз. Содан кейінгі өңдеу сол қосымшаның өз саясатымен реттеледі.</p>
+
+    <h2>Құрылғыңыздағы деректер</h2>
+    <p>Қосымша тек сіздің құрылғыңызда сақтайды:</p>
+    <ul>
+      <li>әр пазлды жинау прогресі</li>
+      <li>өзіңіз қосқан суреттер және олардан жасалған пазлдар</li>
+      <li>қосымша баптаулары</li>
+      <li>сатып алу күйі (Google Play арқылы тексеріледі)</li>
+    </ul>
+    <p>Бұл деректер құрылғыдан ешқашан шықпайды және қосымшаны жойғанда өшіріледі.</p>
+
+    <h2>Интернетсіз жұмыс істейді</h2>
+    <p>Қосымша толықтай интернетсіз жұмыс істейді. Ол контент жүктемейді және біздің серверлерімізге ештеңе жібермейді — бұл қосымша үшін бізде сервер жоқ.</p>
+
+    <h2>Аналитика</h2>
+    <p>Қосымша жалпы қолдану үрдістерін — мысалы, құлау есептері мен сеанс деректерін — түсіну үшін Google Play-дің кіріктірілген аналитикасын (Play Console) пайдалануы мүмкін. Бұл деректер жинақталған және жеке пайдаланушылармен байланыстырылмайды.</p>
+
+    <h2>Балалардың құпиялылығы</h2>
+    <p>Қосымша 13 жасқа толмаған балаларға арналмаған, біз балалардың жеке деректерін әдейі жинамаймыз. Қосымшада тіркелу, чат, әлеуметтік функциялар және кез келген түрдегі жарнама жоқ.</p>
+    <p>Сатып алуды ата-аналар мен қамқоршылар өз Google Play аккаунты арқылы басқарады. Google Play-дің стандартты ата-ана бақылауымен рұқсатсыз қосымша ішінде сатып алу мүмкін емес.</p>
+
+    <h2>Саясаттағы өзгерістер</h2>
+    <p>Біз бұл саясатты мезгіл-мезгіл жаңартып отыруымыз мүмкін. Өзгерістер осы бетте жаңартылған күнімен жарияланады.</p>
+
+    <h2>Байланыс</h2>
+    <p>Осы Құпиялылық саясаты туралы сұрағыңыз болса, бізге жазыңыз: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
+  </main>
+
+  <main data-lang="tr" lang="tr" hidden>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Son güncelleme: Ekim 2026</p>
+
+    <p>Bu Gizlilik Politikası, Eclectic Art Lines'ın (“biz”) Art Jigsaw: Photo Puzzle Maker mobil uygulamasıyla (“uygulama”) ilgili bilgileri nasıl ele aldığını açıklar.</p>
+
+    <h2>Reklam Yok</h2>
+    <p>Uygulama hiçbir türde reklam göstermez: banner yok, video reklam yok, açılan pencere yok, reklam ağı yok. Uygulama reklam kimliğinizi kullanmaz.</p>
+
+    <h2>Toplamadığımız Bilgiler</h2>
+    <p>Uygulama hiçbir kişisel bilgiyi toplamaz, saklamaz ve göndermez. Hesap açmanız gerekmez. Adınıza, e-posta adresinize, telefon numaranıza, rehberinize veya konumunuza erişimimiz yoktur.</p>
+
+    <h2>Kendi Fotoğraflarınız</h2>
+    <p>Uygulama, kendi fotoğrafınızdan yapboz yapabilir. Fotoğrafı siz seçersiniz ve uygulama yalnızca seçtiğiniz o tek resmi alır.</p>
+    <p>Resim tamamen cihazınızda işlenir: uygulama onu doğrudan telefonunuzda, yerel olarak parçalara ayırır. Resim hiçbir yere yüklenmez, bize gönderilmez ve biz onu hiç görmeyiz. Bu uygulama için bir sunucumuz yok; fotoğrafınızın gidebileceği bir yer de yok.</p>
+    <p>Android 13 ve sonrasında sistemin fotoğraf seçicisi uygulamaya yalnızca seçtiğiniz resme erişim verir, galerinizdeki başka hiçbir şeye değil. Android'in eski sürümlerinde uygulama fotoğraf veya depolama izni isteyebilir; o durumda da yalnızca seçtiğiniz resmi okur, galerinizin geri kalanını taramaz, dizinlemez ve kopyalamaz.</p>
+    <p>Seçtiğiniz resim ve ondan yapılan yapboz cihazınızda kalır; o yapbozu sildiğinizde ya da uygulamayı kaldırdığınızda silinir.</p>
+
+    <h2>Tek Seferlik Satın Alma</h2>
+    <p>Uygulama, kendi fotoğraflarınızdan yapboz yapmayı açan tek seferlik bir satın alma sunar. Abonelik yoktur, tekrarlayan ödeme yoktur.</p>
+    <p>Ödeme işlemlerinin tamamını Google Play yürütür. Kart bilgilerinizi ve fatura bilgilerinizi almıyoruz, saklamıyoruz ve bunlara erişimimiz yok. Satın alma geçmişiniz Google hesabınız üzerinden yönetilir; aynı hesaba giriş yaparak satın almayı yeni bir cihazda geri yükleyebilirsiniz.</p>
+
+    <h2>Tamamlanan Yapbozu Paylaşma</h2>
+    <p>Tamamlanan bir yapbozu paylaştığınızda görsel cihazınızda oluşturulur ve uygulama Android'in standart paylaşma penceresini açar. Uygulamayı ve alıcıyı siz seçersiniz; görsel doğrudan cihazınızdan seçtiğiniz uygulamaya gider. Biz onu görmeyiz ve bir kopyasını almayız. Gönderildikten sonra görsel, o uygulamanın kendi gizlilik politikasına tabidir.</p>
+
+    <h2>Cihazınızda Saklanan Veriler</h2>
+    <p>Uygulama yalnızca cihazınızda şunları saklar:</p>
+    <ul>
+      <li>her yapbozdaki ilerlemeniz</li>
+      <li>eklediğiniz resimler ve onlardan yapılan yapbozlar</li>
+      <li>uygulama ayarları</li>
+      <li>satın alma durumu (Google Play üzerinden doğrulanır)</li>
+    </ul>
+    <p>Bu veriler cihazınızdan hiçbir zaman çıkmaz ve uygulamayı kaldırdığınızda silinir.</p>
+
+    <h2>İnternetsiz Çalışır</h2>
+    <p>Uygulama tamamen internetsiz çalışır. İçerik indirmez ve bizim sunucularımıza hiçbir şey göndermez — bu uygulama için bir sunucumuz yoktur.</p>
+
+    <h2>Analitik</h2>
+    <p>Uygulama, çökme raporları ve oturum verileri gibi genel kullanım eğilimlerini anlamak için Google Play'in yerleşik analitiğini (Play Console) kullanabilir. Bu veriler toplu haldedir ve tek tek kullanıcılarla ilişkilendirilmez.</p>
+
+    <h2>Çocukların Gizliliği</h2>
+    <p>Uygulama 13 yaşından küçük çocuklara yönelik değildir ve çocuklardan bilerek kişisel bilgi toplamayız. Uygulamada hesap oluşturma, sohbet, sosyal özellik ve hiçbir türde reklam yoktur.</p>
+    <p>Satın almaları ebeveynler ve veliler kendi Google Play hesapları üzerinden denetler. Google Play'in standart ebeveyn denetimleriyle yetkilendirme olmadan uygulama içinde satın alma yapılamaz.</p>
+
+    <h2>Bu Politikadaki Değişiklikler</h2>
+    <p>Bu politikayı zaman zaman güncelleyebiliriz. Değişiklikler, güncellenmiş tarihiyle bu sayfada yayımlanır.</p>
+
+    <h2>İletişim</h2>
+    <p>Bu Gizlilik Politikası hakkında sorularınız varsa bize yazın: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
+  </main>
+
+  <main data-lang="de" lang="de" hidden>
+    <h1>Datenschutzerklärung</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Zuletzt aktualisiert: Oktober 2026</p>
+
+    <p>Diese Datenschutzerklärung beschreibt, wie Eclectic Art Lines („wir“) mit Informationen im Zusammenhang mit der mobilen App Art Jigsaw: Photo Puzzle Maker („die App“) umgeht.</p>
+
+    <h2>Keine Werbung</h2>
+    <p>Die App zeigt keinerlei Werbung: keine Banner, keine Videoanzeigen, keine Pop-ups, keine Werbenetzwerke. Die App verwendet Ihre Werbe-ID nicht.</p>
+
+    <h2>Daten, die wir nicht erheben</h2>
+    <p>Die App erhebt, speichert und übermittelt keine personenbezogenen Daten. Eine Registrierung ist nicht erforderlich. Wir haben keinen Zugriff auf Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer, Ihre Kontakte oder Ihren Standort.</p>
+
+    <h2>Ihre eigenen Fotos</h2>
+    <p>Die App kann aus einem Ihrer Fotos ein Puzzle machen. Dieses Foto wählen Sie selbst aus, und die App erhält nur genau das eine Bild, das Sie auswählen.</p>
+    <p>Das Bild wird vollständig auf Ihrem Gerät verarbeitet: Die App zerschneidet es lokal auf Ihrem Telefon in Teile. Es wird nirgendwohin hochgeladen, nicht an uns gesendet, und wir sehen es nie. Für diese App betreiben wir keinen Server – Ihr Foto hat gar keinen Ort, an den es gehen könnte.</p>
+    <p>Ab Android 13 gewährt die System-Fotoauswahl der App nur Zugriff auf das ausgewählte Bild und auf nichts anderes in Ihrer Galerie. Auf älteren Android-Versionen fragt die App unter Umständen nach einer Foto- oder Speicherberechtigung; auch dann liest sie nur das von Ihnen gewählte Bild und durchsucht, indiziert oder kopiert den Rest Ihrer Galerie nicht.</p>
+    <p>Ihr gewähltes Bild und das daraus erstellte Puzzle bleiben auf Ihrem Gerät und werden gelöscht, sobald Sie dieses Puzzle löschen oder die App deinstallieren.</p>
+
+    <h2>Einmaliger Kauf</h2>
+    <p>Die App bietet einen einmaligen Kauf, der das Erstellen von Puzzles aus eigenen Fotos freischaltet. Es gibt kein Abo und keine wiederkehrenden Zahlungen.</p>
+    <p>Die gesamte Zahlungsabwicklung erfolgt über Google Play. Wir erhalten, speichern und sehen Ihre Kartendaten und Rechnungsdaten nicht. Ihr Kaufverlauf wird über Ihr Google-Konto verwaltet; mit demselben Konto lässt sich der Kauf auf einem neuen Gerät wiederherstellen.</p>
+
+    <h2>Fertiges Puzzle teilen</h2>
+    <p>Wenn Sie ein fertiges Puzzle teilen, wird das Bild auf Ihrem Gerät erstellt und die App öffnet den Standard-Teilen-Dialog von Android. Sie wählen App und Empfänger selbst, und das Bild geht direkt von Ihrem Gerät an die gewählte App. Wir sehen es nie und erhalten keine Kopie. Danach gilt die Datenschutzerklärung der jeweiligen App.</p>
+
+    <h2>Daten auf Ihrem Gerät</h2>
+    <p>Die App speichert ausschließlich auf Ihrem Gerät:</p>
+    <ul>
+      <li>Ihren Fortschritt bei jedem Puzzle</li>
+      <li>von Ihnen hinzugefügte Bilder und die daraus erstellten Puzzles</li>
+      <li>App-Einstellungen</li>
+      <li>den Kaufstatus (über Google Play verifiziert)</li>
+    </ul>
+    <p>Diese Daten verlassen Ihr Gerät nie und werden mit der Deinstallation gelöscht.</p>
+
+    <h2>Funktioniert offline</h2>
+    <p>Die App funktioniert vollständig offline. Sie lädt keine Inhalte herunter und sendet nichts an unsere Server – für diese App betreiben wir keine.</p>
+
+    <h2>Analyse</h2>
+    <p>Die App kann die integrierte Analyse von Google Play (Play Console) nutzen, um allgemeine Nutzungsmuster wie Absturzberichte und Sitzungsdaten zu verstehen. Diese Daten sind aggregiert und nicht mit einzelnen Nutzern verknüpft.</p>
+
+    <h2>Datenschutz für Kinder</h2>
+    <p>Die App richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine personenbezogenen Daten von Kindern. Es gibt keine Registrierung, keinen Chat, keine sozialen Funktionen und keinerlei Werbung.</p>
+    <p>Käufe steuern Eltern und Erziehungsberechtigte über ihr Google-Play-Konto. Ohne Freigabe über die Standard-Jugendschutzeinstellungen von Google Play ist kein In-App-Kauf möglich.</p>
+
+    <h2>Änderungen dieser Erklärung</h2>
+    <p>Wir können diese Erklärung von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit aktualisiertem Datum veröffentlicht.</p>
+
+    <h2>Kontakt</h2>
+    <p>Bei Fragen zu dieser Datenschutzerklärung schreiben Sie uns: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
+  </main>
+
+  <main data-lang="fr" lang="fr" hidden>
+    <h1>Politique de confidentialité</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Dernière mise à jour : octobre 2026</p>
+
+    <p>Cette Politique de confidentialité décrit la manière dont Eclectic Art Lines («&nbsp;nous&nbsp;») traite les informations liées à l'application mobile Art Jigsaw: Photo Puzzle Maker («&nbsp;l'application&nbsp;»).</p>
+
+    <h2>Aucune publicité</h2>
+    <p>L'application n'affiche aucune publicité : ni bannières, ni vidéos, ni fenêtres surgissantes, ni régies publicitaires. L'application n'utilise pas votre identifiant publicitaire.</p>
+
+    <h2>Informations que nous ne collectons pas</h2>
+    <p>L'application ne collecte, ne conserve et ne transmet aucune donnée personnelle. Aucune inscription n'est requise. Nous n'avons accès ni à votre nom, ni à votre adresse e-mail, ni à votre numéro de téléphone, ni à vos contacts, ni à votre position.</p>
+
+    <h2>Vos propres photos</h2>
+    <p>L'application peut transformer une de vos photos en puzzle. Vous choisissez cette photo vous-même, et l'application ne reçoit que l'image que vous avez sélectionnée.</p>
+    <p>L'image est traitée entièrement sur votre appareil : l'application la découpe en pièces localement, sur votre téléphone. Elle n'est envoyée nulle part, ne nous est jamais transmise, et nous ne la voyons jamais. Nous n'exploitons aucun serveur pour cette application : votre photo n'a tout simplement nulle part où aller.</p>
+    <p>À partir d'Android 13, le sélecteur de photos du système ne donne à l'application accès qu'à l'image choisie, et à rien d'autre dans votre galerie. Sur les versions plus anciennes, l'application peut demander une autorisation d'accès aux photos ou au stockage ; même dans ce cas, elle ne lit que l'image que vous choisissez et n'analyse, n'indexe ni ne copie le reste de votre galerie.</p>
+    <p>L'image choisie et le puzzle qui en est issu restent sur votre appareil et sont supprimés lorsque vous supprimez ce puzzle ou désinstallez l'application.</p>
+
+    <h2>Achat unique</h2>
+    <p>L'application propose un achat unique qui débloque la création de puzzles à partir de vos propres photos. Il n'y a ni abonnement, ni prélèvement récurrent.</p>
+    <p>Le traitement des paiements est entièrement assuré par Google Play. Nous ne recevons, ne conservons et ne consultons jamais vos données bancaires ou de facturation. Votre historique d'achats est géré par votre compte Google, et l'achat peut être restauré sur un nouvel appareil en vous connectant avec le même compte.</p>
+
+    <h2>Partager un puzzle terminé</h2>
+    <p>Lorsque vous partagez un puzzle terminé, l'image est créée sur votre appareil et l'application ouvre le menu de partage standard d'Android. Vous choisissez vous-même l'application et le destinataire, et l'image part directement de votre appareil vers l'application choisie. Nous ne la voyons jamais et n'en recevons aucune copie. Ensuite, elle relève de la politique de confidentialité de cette application.</p>
+
+    <h2>Données stockées sur votre appareil</h2>
+    <p>L'application enregistre uniquement sur votre appareil :</p>
+    <ul>
+      <li>votre progression sur chaque puzzle</li>
+      <li>les images que vous avez ajoutées et les puzzles qui en sont issus</li>
+      <li>les réglages de l'application</li>
+      <li>le statut d'achat (vérifié via Google Play)</li>
+    </ul>
+    <p>Ces données ne quittent jamais votre appareil et sont supprimées lors de la désinstallation.</p>
+
+    <h2>Fonctionne hors ligne</h2>
+    <p>L'application fonctionne entièrement hors ligne. Elle ne télécharge aucun contenu et n'envoie rien vers nos serveurs : nous n'en avons aucun pour cette application.</p>
+
+    <h2>Statistiques</h2>
+    <p>L'application peut utiliser les statistiques intégrées de Google Play (Play Console) pour comprendre les tendances générales d'utilisation, comme les rapports de plantage et les données de session. Ces données sont agrégées et ne sont pas liées à des utilisateurs individuels.</p>
+
+    <h2>Confidentialité des enfants</h2>
+    <p>L'application ne s'adresse pas aux enfants de moins de 13 ans et nous ne collectons sciemment aucune donnée personnelle les concernant. Il n'y a ni création de compte, ni messagerie, ni fonction sociale, ni publicité d'aucune sorte.</p>
+    <p>Les achats sont contrôlés par les parents et tuteurs via leur compte Google Play. Aucun achat intégré n'est possible sans autorisation par le contrôle parental standard de Google Play.</p>
+
+    <h2>Modifications de cette politique</h2>
+    <p>Nous pouvons mettre à jour cette politique de temps à autre. Les modifications seront publiées sur cette page avec une date actualisée.</p>
+
+    <h2>Contact</h2>
+    <p>Pour toute question sur cette Politique de confidentialité, écrivez-nous : <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
+  </main>
+
+  <main data-lang="es" lang="es" hidden>
+    <h1>Política de Privacidad</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Última actualización: octubre de 2026</p>
+
+    <p>Esta Política de Privacidad describe cómo Eclectic Art Lines («nosotros») trata la información relacionada con la aplicación móvil Art Jigsaw: Photo Puzzle Maker («la aplicación»).</p>
+
+    <h2>Sin publicidad</h2>
+    <p>La aplicación no muestra publicidad de ningún tipo: ni banners, ni anuncios de vídeo, ni ventanas emergentes, ni redes publicitarias. La aplicación no utiliza tu identificador de publicidad.</p>
+
+    <h2>Información que no recopilamos</h2>
+    <p>La aplicación no recopila, almacena ni transmite ningún dato personal. No hace falta registrarse. No tenemos acceso a tu nombre, correo electrónico, número de teléfono, contactos ni ubicación.</p>
+
+    <h2>Tus propias fotos</h2>
+    <p>La aplicación puede convertir una foto tuya en un rompecabezas. Tú eliges esa foto, y la aplicación recibe únicamente la imagen que has seleccionado.</p>
+    <p>La imagen se procesa por completo en tu dispositivo: la aplicación la recorta en piezas localmente, en tu propio teléfono. No se sube a ningún sitio, no se nos envía y nosotros nunca la vemos. No tenemos ningún servidor para esta aplicación: tu foto sencillamente no tiene adónde ir.</p>
+    <p>En Android 13 y posteriores, el selector de fotos del sistema da a la aplicación acceso solo a la imagen elegida y a nada más de tu galería. En versiones anteriores, la aplicación puede pedir permiso de fotos o almacenamiento; aun así, solo lee la imagen que eliges y no analiza, indexa ni copia el resto de tu galería.</p>
+    <p>La imagen elegida y el rompecabezas creado a partir de ella permanecen en tu dispositivo y se eliminan cuando borras ese rompecabezas o desinstalas la aplicación.</p>
+
+    <h2>Compra única</h2>
+    <p>La aplicación ofrece una única compra que desbloquea la creación de rompecabezas a partir de tus propias fotos. No hay suscripción ni cargos recurrentes.</p>
+    <p>Todo el procesamiento de pagos lo realiza Google Play. No recibimos, almacenamos ni tenemos acceso a los datos de tu tarjeta ni a tu información de facturación. Tu historial de compras se gestiona desde tu cuenta de Google y la compra puede restaurarse en un dispositivo nuevo iniciando sesión con la misma cuenta.</p>
+
+    <h2>Compartir un rompecabezas terminado</h2>
+    <p>Cuando compartes un rompecabezas terminado, la imagen se crea en tu dispositivo y la aplicación abre el menú de compartir estándar de Android. Tú eliges la aplicación y el destinatario, y la imagen va directamente desde tu dispositivo a la aplicación elegida. Nosotros nunca la vemos ni recibimos una copia. A partir de ahí, se rige por la política de privacidad de esa aplicación.</p>
+
+    <h2>Datos guardados en tu dispositivo</h2>
+    <p>La aplicación guarda únicamente en tu dispositivo:</p>
+    <ul>
+      <li>tu progreso en cada rompecabezas</li>
+      <li>las imágenes que has añadido y los rompecabezas creados con ellas</li>
+      <li>los ajustes de la aplicación</li>
+      <li>el estado de la compra (verificado a través de Google Play)</li>
+    </ul>
+    <p>Estos datos nunca salen de tu dispositivo y se eliminan al desinstalar la aplicación.</p>
+
+    <h2>Funciona sin conexión</h2>
+    <p>La aplicación funciona totalmente sin conexión. No descarga contenido ni envía nada a servidores nuestros: no tenemos ninguno para esta aplicación.</p>
+
+    <h2>Analíticas</h2>
+    <p>La aplicación puede usar las analíticas integradas de Google Play (Play Console) para entender patrones generales de uso, como informes de fallos y datos de sesión. Estos datos están agregados y no se vinculan a usuarios individuales.</p>
+
+    <h2>Privacidad de los menores</h2>
+    <p>La aplicación no está dirigida a menores de 13 años y no recopilamos a sabiendas datos personales de menores. No hay registro, ni chat, ni funciones sociales, ni publicidad de ningún tipo.</p>
+    <p>Las compras las controlan los padres y tutores desde su cuenta de Google Play. No se puede realizar ninguna compra dentro de la aplicación sin autorización mediante el control parental estándar de Google Play.</p>
+
+    <h2>Cambios en esta política</h2>
+    <p>Podemos actualizar esta política de vez en cuando. Los cambios se publicarán en esta página con una fecha actualizada.</p>
+
+    <h2>Contacto</h2>
+    <p>Si tienes alguna pregunta sobre esta Política de Privacidad, escríbenos a: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
+  </main>
+
+  <main data-lang="it" lang="it" hidden>
+    <h1>Informativa sulla privacy</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Ultimo aggiornamento: ottobre 2026</p>
+
+    <p>Questa Informativa sulla privacy descrive come Eclectic Art Lines («noi») tratta le informazioni relative all'applicazione mobile Art Jigsaw: Photo Puzzle Maker («l'app»).</p>
+
+    <h2>Nessuna pubblicità</h2>
+    <p>L'app non mostra pubblicità di alcun tipo: niente banner, niente video pubblicitari, niente pop-up, niente reti pubblicitarie. L'app non utilizza il tuo identificatore pubblicitario.</p>
+
+    <h2>Informazioni che non raccogliamo</h2>
+    <p>L'app non raccoglie, non conserva e non trasmette alcun dato personale. Non è richiesta alcuna registrazione. Non abbiamo accesso al tuo nome, indirizzo email, numero di telefono, contatti o posizione.</p>
+
+    <h2>Le tue foto</h2>
+    <p>L'app può trasformare una tua foto in un puzzle. La foto la scegli tu, e l'app riceve soltanto l'unica immagine che hai selezionato.</p>
+    <p>L'immagine viene elaborata interamente sul tuo dispositivo: l'app la ritaglia in pezzi in locale, sul tuo telefono. Non viene caricata da nessuna parte, non viene inviata a noi e noi non la vediamo mai. Per questa app non gestiamo alcun server: la tua foto non ha semplicemente nessun posto dove andare.</p>
+    <p>Da Android 13 in poi, il selettore di foto di sistema concede all'app l'accesso solo all'immagine scelta e a nient'altro nella tua galleria. Nelle versioni precedenti l'app può chiedere l'autorizzazione alle foto o all'archiviazione; anche in quel caso legge soltanto l'immagine che scegli e non analizza, indicizza o copia il resto della galleria.</p>
+    <p>L'immagine scelta e il puzzle creato da essa restano sul tuo dispositivo e vengono eliminati quando cancelli quel puzzle o disinstalli l'app.</p>
+
+    <h2>Acquisto unico</h2>
+    <p>L'app offre un unico acquisto che sblocca la creazione di puzzle dalle tue foto. Non ci sono abbonamenti né addebiti ricorrenti.</p>
+    <p>L'intera gestione dei pagamenti è affidata a Google Play. Non riceviamo, non conserviamo e non possiamo consultare i dati della tua carta o le informazioni di fatturazione. La cronologia degli acquisti è gestita dal tuo account Google e l'acquisto può essere ripristinato su un nuovo dispositivo accedendo con lo stesso account.</p>
+
+    <h2>Condividere un puzzle completato</h2>
+    <p>Quando condividi un puzzle completato, l'immagine viene creata sul tuo dispositivo e l'app apre il menu di condivisione standard di Android. Scegli tu l'app e il destinatario, e l'immagine passa direttamente dal tuo dispositivo all'app scelta. Noi non la vediamo mai e non ne riceviamo copia. Da quel momento vale l'informativa sulla privacy di quell'app.</p>
+
+    <h2>Dati salvati sul tuo dispositivo</h2>
+    <p>L'app salva esclusivamente sul tuo dispositivo:</p>
+    <ul>
+      <li>i tuoi progressi su ogni puzzle</li>
+      <li>le immagini che hai aggiunto e i puzzle creati da esse</li>
+      <li>le impostazioni dell'app</li>
+      <li>lo stato dell'acquisto (verificato tramite Google Play)</li>
+    </ul>
+    <p>Questi dati non lasciano mai il dispositivo e vengono eliminati disinstallando l'app.</p>
+
+    <h2>Funziona offline</h2>
+    <p>L'app funziona completamente offline. Non scarica contenuti e non invia nulla a nostri server: per questa app non ne abbiamo.</p>
+
+    <h2>Analisi</h2>
+    <p>L'app può utilizzare le analisi integrate di Google Play (Play Console) per comprendere tendenze generali di utilizzo, come i rapporti sugli arresti anomali e i dati di sessione. Questi dati sono aggregati e non collegati ai singoli utenti.</p>
+
+    <h2>Privacy dei minori</h2>
+    <p>L'app non è rivolta a bambini di età inferiore ai 13 anni e non raccogliamo consapevolmente dati personali dei minori. Non ci sono registrazioni, chat, funzioni social né pubblicità di alcun tipo.</p>
+    <p>Gli acquisti sono controllati da genitori e tutori tramite il loro account Google Play. Nessun acquisto in-app è possibile senza autorizzazione tramite i controlli parentali standard di Google Play.</p>
+
+    <h2>Modifiche a questa informativa</h2>
+    <p>Potremmo aggiornare questa informativa di tanto in tanto. Le modifiche saranno pubblicate su questa pagina con la data aggiornata.</p>
+
+    <h2>Contatti</h2>
+    <p>Per domande su questa Informativa sulla privacy scrivici a: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
+  </main>
+
+  <main data-lang="pt" lang="pt" hidden>
+    <h1>Política de Privacidade</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Última atualização: outubro de 2026</p>
+
+    <p>Esta Política de Privacidade descreve como a Eclectic Art Lines (“nós”) trata as informações relacionadas ao aplicativo móvel Art Jigsaw: Photo Puzzle Maker (“o aplicativo”).</p>
+
+    <h2>Sem anúncios</h2>
+    <p>O aplicativo não exibe anúncios de nenhum tipo: sem banners, sem anúncios em vídeo, sem pop-ups, sem redes de publicidade. O aplicativo não usa o seu identificador de publicidade.</p>
+
+    <h2>Informações que não coletamos</h2>
+    <p>O aplicativo não coleta, não armazena e não transmite nenhum dado pessoal. Não é preciso criar conta. Não temos acesso ao seu nome, e-mail, telefone, contatos ou localização.</p>
+
+    <h2>Suas próprias fotos</h2>
+    <p>O aplicativo pode transformar uma foto sua em quebra-cabeça. Você mesmo escolhe essa foto, e o aplicativo recebe apenas a única imagem que você selecionou.</p>
+    <p>A imagem é processada inteiramente no seu aparelho: o aplicativo a recorta em peças localmente, no próprio celular. Ela não é enviada para lugar nenhum, não chega até nós e nunca a vemos. Não mantemos servidor para este aplicativo — a sua foto simplesmente não tem para onde ir.</p>
+    <p>No Android 13 e posteriores, o seletor de fotos do sistema dá ao aplicativo acesso apenas à imagem escolhida, e a mais nada da sua galeria. Em versões antigas, o aplicativo pode pedir permissão de fotos ou armazenamento; mesmo assim, ele lê somente a imagem escolhida e não varre, indexa ou copia o restante da galeria.</p>
+    <p>A imagem escolhida e o quebra-cabeça feito dela ficam no seu aparelho e são apagados quando você exclui esse quebra-cabeça ou desinstala o aplicativo.</p>
+
+    <h2>Compra única</h2>
+    <p>O aplicativo oferece uma compra única que libera a criação de quebra-cabeças a partir das suas próprias fotos. Não há assinatura nem cobranças recorrentes.</p>
+    <p>Todo o processamento de pagamento é feito pelo Google Play. Não recebemos, não armazenamos e não temos acesso aos dados do seu cartão nem às suas informações de cobrança. O histórico de compras é gerenciado pela sua conta Google, e a compra pode ser restaurada em um novo aparelho entrando com a mesma conta.</p>
+
+    <h2>Compartilhar um quebra-cabeça pronto</h2>
+    <p>Quando você compartilha um quebra-cabeça pronto, a imagem é criada no seu aparelho e o aplicativo abre o menu de compartilhamento padrão do Android. Você escolhe o aplicativo e o destinatário, e a imagem vai direto do seu aparelho para o aplicativo escolhido. Nós nunca a vemos e não recebemos cópia. A partir daí, vale a política de privacidade daquele aplicativo.</p>
+
+    <h2>Dados guardados no seu aparelho</h2>
+    <p>O aplicativo guarda apenas no seu aparelho:</p>
+    <ul>
+      <li>o seu progresso em cada quebra-cabeça</li>
+      <li>as imagens que você adicionou e os quebra-cabeças feitos com elas</li>
+      <li>as configurações do aplicativo</li>
+      <li>o status da compra (verificado pelo Google Play)</li>
+    </ul>
+    <p>Esses dados nunca saem do seu aparelho e são apagados ao desinstalar o aplicativo.</p>
+
+    <h2>Funciona offline</h2>
+    <p>O aplicativo funciona totalmente offline. Ele não baixa conteúdo e não envia nada para servidores nossos — não temos nenhum para este aplicativo.</p>
+
+    <h2>Análises</h2>
+    <p>O aplicativo pode usar as análises integradas do Google Play (Play Console) para entender padrões gerais de uso, como relatórios de falhas e dados de sessão. Esses dados são agregados e não são ligados a usuários individuais.</p>
+
+    <h2>Privacidade das crianças</h2>
+    <p>O aplicativo não é direcionado a crianças menores de 13 anos e não coletamos intencionalmente dados pessoais de crianças. Não há criação de conta, chat, recursos sociais nem publicidade de nenhum tipo.</p>
+    <p>As compras são controladas por pais e responsáveis pela conta do Google Play. Nenhuma compra no aplicativo pode ser feita sem autorização pelo controle parental padrão do Google Play.</p>
+
+    <h2>Alterações nesta política</h2>
+    <p>Podemos atualizar esta política de tempos em tempos. As alterações serão publicadas nesta página com a data atualizada.</p>
+
+    <h2>Contato</h2>
+    <p>Se tiver dúvidas sobre esta Política de Privacidade, escreva para: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
+  </main>
+
+  <main data-lang="ro" lang="ro" hidden>
+    <h1>Politica de confidențialitate</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Ultima actualizare: octombrie 2026</p>
+
+    <p>Această Politică de confidențialitate descrie modul în care Eclectic Art Lines („noi”) tratează informațiile legate de aplicația mobilă Art Jigsaw: Photo Puzzle Maker („aplicația”).</p>
+
+    <h2>Fără reclame</h2>
+    <p>Aplicația nu afișează reclame de niciun fel: fără bannere, fără reclame video, fără ferestre pop-up, fără rețele de publicitate. Aplicația nu folosește identificatorul tău de publicitate.</p>
+
+    <h2>Informații pe care nu le colectăm</h2>
+    <p>Aplicația nu colectează, nu stochează și nu transmite date cu caracter personal. Nu este necesară crearea unui cont. Nu avem acces la numele tău, adresa de e-mail, numărul de telefon, contactele sau locația ta.</p>
+
+    <h2>Fotografiile tale</h2>
+    <p>Aplicația poate transforma o fotografie de-a ta într-un puzzle. Tu alegi acea fotografie, iar aplicația primește doar imaginea pe care ai selectat-o.</p>
+    <p>Imaginea este procesată în întregime pe dispozitivul tău: aplicația o taie în piese local, chiar pe telefonul tău. Nu este încărcată nicăieri, nu ne este trimisă și nu o vedem niciodată. Nu avem niciun server pentru această aplicație — fotografia ta pur și simplu nu are unde să plece.</p>
+    <p>Pe Android 13 și versiuni ulterioare, selectorul de fotografii al sistemului acordă aplicației acces doar la imaginea aleasă și la nimic altceva din galerie. Pe versiunile mai vechi, aplicația poate cere permisiunea pentru fotografii sau stocare; chiar și atunci, citește doar imaginea aleasă de tine și nu scanează, indexează sau copiază restul galeriei.</p>
+    <p>Imaginea aleasă și puzzle-ul creat din ea rămân pe dispozitivul tău și sunt șterse când ștergi acel puzzle sau dezinstalezi aplicația.</p>
+
+    <h2>Achiziție unică</h2>
+    <p>Aplicația oferă o singură achiziție care deblochează crearea de puzzle-uri din propriile fotografii. Nu există abonament și nici plăți recurente.</p>
+    <p>Procesarea plăților este realizată în întregime de Google Play. Nu primim, nu stocăm și nu avem acces la datele cardului sau la informațiile tale de facturare. Istoricul achizițiilor este gestionat prin contul tău Google, iar achiziția poate fi restaurată pe un dispozitiv nou conectându-te cu același cont.</p>
+
+    <h2>Trimiterea unui puzzle finalizat</h2>
+    <p>Când trimiți un puzzle finalizat, imaginea este creată pe dispozitivul tău, iar aplicația deschide meniul standard de partajare din Android. Tu alegi aplicația și destinatarul, iar imaginea merge direct de pe dispozitivul tău către aplicația aleasă. Noi nu o vedem niciodată și nu primim o copie. De acolo înainte se aplică politica de confidențialitate a acelei aplicații.</p>
+
+    <h2>Date stocate pe dispozitivul tău</h2>
+    <p>Aplicația salvează doar pe dispozitivul tău:</p>
+    <ul>
+      <li>progresul tău la fiecare puzzle</li>
+      <li>imaginile adăugate de tine și puzzle-urile create din ele</li>
+      <li>setările aplicației</li>
+      <li>starea achiziției (verificată prin Google Play)</li>
+    </ul>
+    <p>Aceste date nu părăsesc niciodată dispozitivul și sunt șterse la dezinstalarea aplicației.</p>
+
+    <h2>Funcționează offline</h2>
+    <p>Aplicația funcționează complet offline. Nu descarcă conținut și nu trimite nimic către serverele noastre — pentru această aplicație nu avem niciunul.</p>
+
+    <h2>Analize</h2>
+    <p>Aplicația poate folosi analizele integrate Google Play (Play Console) pentru a înțelege tendințe generale de utilizare, precum rapoartele de blocare și datele de sesiune. Aceste date sunt agregate și nu sunt legate de utilizatori individuali.</p>
+
+    <h2>Confidențialitatea copiilor</h2>
+    <p>Aplicația nu se adresează copiilor sub 13 ani și nu colectăm cu bună știință date personale de la copii. Nu există creare de cont, chat, funcții sociale sau reclame de niciun fel.</p>
+    <p>Achizițiile sunt controlate de părinți și tutori prin contul lor Google Play. Nicio achiziție în aplicație nu poate fi făcută fără autorizare prin controlul parental standard Google Play.</p>
+
+    <h2>Modificări ale acestei politici</h2>
+    <p>Putem actualiza această politică din când în când. Modificările vor fi publicate pe această pagină, cu data actualizată.</p>
+
+    <h2>Contact</h2>
+    <p>Dacă ai întrebări despre această Politică de confidențialitate, scrie-ne la: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
+  </main>
+
+  <main data-lang="id" lang="id" hidden>
+    <h1>Kebijakan Privasi</h1>
+    <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Terakhir diperbarui: Oktober 2026</p>
+
+    <p>Kebijakan Privasi ini menjelaskan bagaimana Eclectic Art Lines (“kami”) menangani informasi sehubungan dengan aplikasi seluler Art Jigsaw: Photo Puzzle Maker (“aplikasi”).</p>
+
+    <h2>Tanpa Iklan</h2>
+    <p>Aplikasi tidak menampilkan iklan dalam bentuk apa pun: tanpa banner, tanpa iklan video, tanpa pop-up, tanpa jaringan iklan. Aplikasi tidak menggunakan ID iklan Anda.</p>
+
+    <h2>Informasi yang Tidak Kami Kumpulkan</h2>
+    <p>Aplikasi tidak mengumpulkan, menyimpan, atau mengirimkan data pribadi apa pun. Tidak perlu membuat akun. Kami tidak memiliki akses ke nama, alamat email, nomor telepon, kontak, atau lokasi Anda.</p>
+
+    <h2>Foto Milik Anda</h2>
+    <p>Aplikasi dapat mengubah foto Anda menjadi puzzle. Foto itu Anda pilih sendiri, dan aplikasi hanya menerima satu gambar yang Anda pilih.</p>
+    <p>Gambar diproses sepenuhnya di perangkat Anda: aplikasi memotongnya menjadi kepingan secara lokal, di ponsel Anda sendiri. Gambar tidak diunggah ke mana pun, tidak dikirim kepada kami, dan kami tidak pernah melihatnya. Kami tidak menjalankan server untuk aplikasi ini — foto Anda memang tidak punya tujuan ke mana pun.</p>
+    <p>Pada Android 13 ke atas, pemilih foto bawaan sistem hanya memberi aplikasi akses ke gambar yang Anda pilih, bukan ke isi galeri lainnya. Pada versi lama, aplikasi mungkin meminta izin foto atau penyimpanan; meski begitu, aplikasi hanya membaca gambar pilihan Anda dan tidak memindai, mengindeks, atau menyalin sisa galeri.</p>
+    <p>Gambar pilihan Anda dan puzzle yang dibuat darinya tetap di perangkat Anda dan terhapus saat Anda menghapus puzzle itu atau mencopot aplikasi.</p>
+
+    <h2>Pembelian Satu Kali</h2>
+    <p>Aplikasi menawarkan satu kali pembelian yang membuka pembuatan puzzle dari foto Anda sendiri. Tidak ada langganan dan tidak ada tagihan berulang.</p>
+    <p>Seluruh pemrosesan pembayaran ditangani oleh Google Play. Kami tidak menerima, menyimpan, atau memiliki akses ke detail kartu maupun informasi penagihan Anda. Riwayat pembelian dikelola melalui akun Google Anda, dan pembelian dapat dipulihkan di perangkat baru dengan masuk memakai akun yang sama.</p>
+
+    <h2>Membagikan Puzzle yang Selesai</h2>
+    <p>Saat Anda membagikan puzzle yang selesai, gambar dibuat di perangkat Anda dan aplikasi membuka menu berbagi bawaan Android. Anda sendiri yang memilih aplikasi dan penerimanya, dan gambar langsung berpindah dari perangkat Anda ke aplikasi pilihan Anda. Kami tidak pernah melihatnya dan tidak menerima salinannya. Selanjutnya, gambar tunduk pada kebijakan privasi aplikasi tersebut.</p>
+
+    <h2>Data yang Tersimpan di Perangkat Anda</h2>
+    <p>Aplikasi hanya menyimpan di perangkat Anda:</p>
+    <ul>
+      <li>progres Anda pada setiap puzzle</li>
+      <li>gambar yang Anda tambahkan dan puzzle yang dibuat darinya</li>
+      <li>pengaturan aplikasi</li>
+      <li>status pembelian (diverifikasi melalui Google Play)</li>
+    </ul>
+    <p>Data ini tidak pernah keluar dari perangkat Anda dan terhapus saat aplikasi dicopot.</p>
+
+    <h2>Berfungsi Tanpa Internet</h2>
+    <p>Aplikasi berfungsi sepenuhnya offline. Aplikasi tidak mengunduh konten dan tidak mengirim apa pun ke server kami — kami tidak memilikinya untuk aplikasi ini.</p>
+
+    <h2>Analitik</h2>
+    <p>Aplikasi dapat menggunakan analitik bawaan Google Play (Play Console) untuk memahami pola penggunaan umum seperti laporan kerusakan dan data sesi. Data ini bersifat agregat dan tidak dikaitkan dengan pengguna perorangan.</p>
+
+    <h2>Privasi Anak</h2>
+    <p>Aplikasi tidak ditujukan untuk anak di bawah 13 tahun, dan kami tidak dengan sengaja mengumpulkan data pribadi anak. Tidak ada pembuatan akun, obrolan, fitur sosial, maupun iklan dalam bentuk apa pun.</p>
+    <p>Pembelian dikendalikan oleh orang tua dan wali melalui akun Google Play mereka. Pembelian dalam aplikasi tidak dapat dilakukan tanpa otorisasi melalui kontrol orang tua standar Google Play.</p>
+
+    <h2>Perubahan Kebijakan Ini</h2>
+    <p>Kami dapat memperbarui kebijakan ini dari waktu ke waktu. Perubahan akan dimuat di halaman ini beserta tanggal pembaruannya.</p>
+
+    <h2>Kontak</h2>
+    <p>Jika ada pertanyaan tentang Kebijakan Privasi ini, hubungi kami di: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
+  </main>
+
   <footer>© 2026 Eclectic Art Lines</footer>
+
+  <script>
+    (function () {
+      var sections = Array.prototype.slice.call(document.querySelectorAll('main[data-lang]'));
+      var buttons = Array.prototype.slice.call(document.querySelectorAll('nav.langs button'));
+      var backLink = document.querySelector('header a');
+      var backText = {"en": "← Back to main page", "ru": "← На главную", "kk": "← Басты бетке", "tr": "← Ana sayfaya dön", "de": "← Zur Startseite", "fr": "← Retour à l'accueil", "es": "← Volver a la página principal", "it": "← Torna alla pagina principale", "pt": "← Voltar à página principal", "ro": "← Înapoi la pagina principală", "id": "← Kembali ke halaman utama"};
+      var available = sections.map(function (s) { return s.getAttribute('data-lang'); });
+
+      function show(code) {
+        if (available.indexOf(code) === -1) { code = 'en'; }
+        sections.forEach(function (s) { s.hidden = s.getAttribute('data-lang') !== code; });
+        buttons.forEach(function (b) {
+          b.setAttribute('aria-current', String(b.getAttribute('data-lang') === code));
+        });
+        if (backLink && backText[code]) { backLink.textContent = backText[code]; }
+        document.documentElement.lang = code;
+        try { localStorage.setItem('eal-privacy-lang', code); } catch (e) {}
+      }
+
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () { show(b.getAttribute('data-lang')); });
+      });
+
+      var chosen = null;
+      try { chosen = localStorage.getItem('eal-privacy-lang'); } catch (e) {}
+      if (!chosen) {
+        var prefs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
+        for (var i = 0; i < prefs.length && !chosen; i++) {
+          var base = String(prefs[i]).toLowerCase().split('-')[0];
+          if (available.indexOf(base) !== -1) { chosen = base; }
+        }
+      }
+      show(chosen || 'en');
+    })();
+  </script>
 </body>
 </html>
