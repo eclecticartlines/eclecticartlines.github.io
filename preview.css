@@ -119,7 +119,7 @@ h2 { font-size: var(--t-xl); max-width: 30ch; margin-bottom: var(--u); }
 h3 { font-size: var(--t-md); }
 
 p { max-width: var(--measure); margin-bottom: var(--u-h); }
-.lede { font-size: var(--t-md); line-height: 1.5; color: var(--blue-soft); max-width: 40rem; }
+.lede { font-size: var(--t-md); line-height: 1.5; color: var(--blue-soft); max-width: 40rem; text-wrap: balance; }
 .deep .lede { color: var(--cream-dim); }
 
 /* ── APP LIST ── */
@@ -128,22 +128,25 @@ p { max-width: var(--measure); margin-bottom: var(--u-h); }
 
 .app { padding: var(--u) 0; border-top: 1px solid var(--rule-soft); }
 
-/* the icon and its label ride together on a dark blue plate */
+/* the icon and its label ride together on a dark blue plate.
+   Plate height 44px. Icon 44x44, flush to the plate's left, top and bottom —
+   no padding at all. Cream underlay starts where the icon ends, runs the full
+   44px height, and is exactly as wide as the text plus a 9px side bearing. */
 .app-mark {
-  display: inline-flex; align-items: center; gap: 0.6rem;
+  display: inline-flex; align-items: stretch;
   background: var(--blue-deep);
-  padding: 0.3rem 0.85rem 0.3rem 0.3rem;
-  border-radius: 4px;
+  border-radius: 4px; overflow: hidden;
   margin-bottom: var(--u-h);
 }
-.app-mark img { width: 34px; height: 34px; border-radius: 5px; flex-shrink: 0; }
+.app-mark img { width: 44px; height: 44px; border-radius: 0; flex-shrink: 0; }
 .app-meta {
+  display: flex; align-items: center;
+  background: var(--cream); color: var(--blue-deep);
   font-family: 'Source Sans 3', 'Nirmala UI', sans-serif;
-  font-size: var(--t-xs); font-weight: 600;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--cream-dim); line-height: 1.2;
+  font-size: 0.9375rem; font-weight: 600;
+  letter-spacing: 0.055em; text-transform: uppercase;
+  padding: 0 9px; white-space: nowrap;
 }
-.app-meta b { font-weight: 600; color: var(--cream); }
 
 .app h3 { margin-bottom: 0.45rem; }
 .app-lede {
@@ -160,53 +163,56 @@ p { max-width: var(--measure); margin-bottom: var(--u-h); }
 .app-links a:hover { text-decoration: underline; }
 .app-links .muted { color: var(--blue-soft); }
 
-/* ── NUMBERED STEPS: the numeral rides out of the lighter blue onto the darker ── */
-.steps { display: grid; gap: var(--u-2); margin-top: var(--u-2); }
-@media (min-width: 46rem) { .steps { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 72rem) { .steps { grid-template-columns: repeat(4, 1fr); gap: var(--u); } }
+/* ── NUMBERED BAND ──
+   Four panels, no gaps, a ramp from dark to light. Each numeral is painted in
+   its OWN panel's colour and hangs left onto the previous, darker one — so it
+   reads on the neighbour and disappears into its own ground. */
+.steps { display: grid; grid-template-columns: 1fr; margin-top: var(--u-2); }
+@media (min-width: 40rem) { .steps { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 64rem) { .steps { grid-template-columns: repeat(4, 1fr); } }
 
-.step { position: relative; padding-top: 2rem; }
+.step {
+  position: relative;
+  padding: 5.8rem 1.3rem var(--u-2);
+  color: var(--cream);
+}
+.s1 { background: #142544; }
+.s2 { background: #1d3463; }
+.s3 { background: #28468C; }
+.s4 { background: #3f61b5; }
 
 .num {
-  position: absolute; left: -0.045em;
+  position: absolute; top: 0.1rem; left: 0;
+  transform: translateX(-58%);
   font-family: 'Source Serif 4', Georgia, serif;
-  font-weight: 600; font-size: 5.6rem; line-height: 0.88;
+  font-weight: 600; font-size: 9.2rem; line-height: 0.8;
   letter-spacing: -0.05em;
   pointer-events: none; user-select: none;
 }
-/* the part still on the lighter blue — flat, no shadow */
-.num-out { top: 0; color: var(--cream); opacity: 0.3; }
+.s1 .num { color: #142544; }
+.s2 .num { color: #1d3463; }
+.s3 .num { color: #28468C; }
+.s4 .num { color: #3f61b5; }
 
-.panel {
-  position: relative; overflow: hidden;
-  background: var(--blue-deep);
-  border-radius: 4px;
-  padding: 2.9rem 1.3rem var(--u-2);
-}
-/* the part that has arrived on the dark panel — lit, with a shadow under it */
-.num-in {
-  top: -2rem;                        /* exactly .step padding-top, so the two halves meet */
-  color: var(--cream); opacity: 0.95;
-  text-shadow: 0 4px 16px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.4);
-}
-.panel-in { position: relative; z-index: 1; }
-.panel-in h3 { color: var(--cream); margin-bottom: var(--u-h); }
-.panel-in p { font-size: var(--t-sm); color: var(--cream-dim); max-width: 24rem; margin: 0; }
+.step h3 { color: var(--cream); margin-bottom: var(--u-h); position: relative; }
+.step p { font-size: var(--t-sm); color: var(--cream-dim); max-width: 24rem; margin: 0; position: relative; }
 
 /* ── ABOUT ── */
 .about { display: grid; gap: var(--u-2); margin-top: var(--u-2); }
 @media (min-width: 58rem) { .about { grid-template-columns: 1.6fr 1fr; } }
 
 .facts { list-style: none; }
+.facts { margin-top: 3px; }      /* 2.84px measured: serif baseline 18.55 − sans baseline 15.71 */
 .facts li {
   font-family: 'Source Sans 3', 'Nirmala UI', sans-serif;
   font-size: var(--t-sm); line-height: 1.6; color: var(--blue-soft);
-  padding: var(--u-h) 0; border-top: 1px solid var(--rule-soft);
+  padding: 0 0 var(--u-h); border-bottom: 1px solid var(--rule-soft);
 }
-.facts li:first-child { border-top: 1px solid var(--rule); }
+.facts li + li { padding-top: var(--u-h); }
+.facts li:last-child { border-bottom: none; }
 
 /* ── BUTTONS ── */
-.row { display: flex; flex-wrap: wrap; gap: var(--u-h); margin-top: var(--u); }
+.row { display: flex; flex-wrap: wrap; gap: var(--u-h); margin-top: var(--u-2); }
 .btn {
   font-family: 'Source Sans 3', 'Nirmala UI', sans-serif;
   font-size: var(--t-sm); display: inline-block;
