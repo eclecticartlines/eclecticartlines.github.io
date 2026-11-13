@@ -171,7 +171,7 @@ p:last-child { margin-bottom: 0; }
 .s4 { background: var(--blue-light); }
 
 .num {
-  position: absolute; top: 0.25rem; left: 0; transform: translateX(-58%);
+  position: absolute; top: 0.25rem; left: 0; transform: translateX(-70%);
   font-family: 'Source Serif 4', Georgia, serif;
   font-weight: 600; font-size: 8.75rem; line-height: 0.8;   /* 140 = 5 x 28 */
   letter-spacing: -0.05em; pointer-events: none; user-select: none;
@@ -187,10 +187,16 @@ p:last-child { margin-bottom: 0; }
   color: var(--cream-dim); max-width: none; margin: 0; position: relative;
 }
 
-/* ── ABOUT: one column, the facts as a ruled strip under the text ── */
-.about { margin-top: var(--u2); }
+/* ── ABOUT ──
+   The heading runs the full width, so the text does too — but a line must
+   stay inside the measure, so the width is used by two text columns of
+   518 each (the same two halves as the app list), not by one long line. */
+.about { margin-top: var(--u2); display: grid; gap: var(--u) var(--gutter); }
+@media (min-width: 60rem) { .about { grid-template-columns: 1fr 1fr; } }
+.about p { max-width: none; }
 
-.facts { list-style: none; margin-top: var(--u2); max-width: var(--measure); }
+.facts { list-style: none; margin-top: var(--u2); max-width: none; }
+@media (min-width: 60rem) { .facts, .about .row { grid-column: 1 / -1; } }
 .facts li {
   font-family: 'Source Sans 3', 'Nirmala UI', sans-serif;
   font-size: 0.90625rem; line-height: 1.375rem;
