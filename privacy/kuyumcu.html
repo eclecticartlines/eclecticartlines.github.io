@@ -11,7 +11,7 @@
     body { font-family: Georgia, serif; background: #fff; color: var(--blue-dark); line-height: 1.8; }
     header {
       background: var(--blue);
-      padding: 2rem;
+      padding: clamp(1.1rem, 5vw, 2rem);
       display: flex;
       align-items: center;
       gap: 1.5rem;
@@ -19,7 +19,7 @@
     header img { height: 40px; }
     header a { color: var(--cream); text-decoration: none; font-size: 0.85rem; opacity: 0.8; }
     header a:hover { opacity: 1; }
-    main { max-width: 720px; margin: 0 auto; padding: 4rem 2rem; }
+    main { max-width: 720px; margin: 0 auto; padding: clamp(2rem, 7vw, 4rem) clamp(1.1rem, 5vw, 2rem); }
     h1 { font-size: 1.8rem; font-weight: normal; margin-bottom: 0.5rem; color: var(--blue-dark); }
     .meta { font-size: 0.8rem; color: #888; margin-bottom: 3rem; }
     h2 { font-size: 1.1rem; font-weight: normal; color: var(--blue); margin: 2.5rem 0 0.75rem; }
