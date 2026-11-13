@@ -63,11 +63,28 @@ h3 { font-size: 1.15rem; }
 p { color: var(--ink); max-width: 62ch; margin-bottom: 1rem; font-size: 1.02rem; }
 
 /* ── APPS ── */
+.sort-row {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 0.5rem; margin-top: 1.75rem;
+}
+.sort-label {
+  font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--blue); opacity: 0.65; margin-right: 0.25rem;
+}
+.sort-btn {
+  font-family: inherit; font-size: 0.8rem; color: var(--blue);
+  background: transparent; border: 1px solid rgba(40,70,140,0.3);
+  padding: 0.35rem 0.9rem; border-radius: 99px; cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.sort-btn:hover { background: rgba(40,70,140,0.07); }
+.sort-btn.is-on { background: var(--blue); color: var(--cream); border-color: var(--blue); }
+
 .apps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr));
   gap: 1.25rem;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 .app-card {
   background: var(--white);
@@ -95,6 +112,17 @@ p { color: var(--ink); max-width: 62ch; margin-bottom: 1rem; font-size: 1.02rem;
   background: rgba(40,70,140,0.08); color: var(--blue);
 }
 .status.live { background: #e3f1e6; color: #24613a; }
+.status.soon { background: rgba(40,70,140,0.05); color: var(--muted); }
+
+.feats { list-style: none; display: grid; gap: 0.3rem; margin: 0.15rem 0 0; }
+.feats li {
+  position: relative; padding-left: 0.95rem;
+  font-size: 0.85rem; color: #4a5a7a; line-height: 1.5;
+}
+.feats li::before {
+  content: ''; position: absolute; left: 0; top: 0.62em;
+  width: 0.4rem; height: 1px; background: var(--blue); opacity: 0.5;
+}
 
 .app-actions {
   margin-top: auto; padding-top: 0.75rem;

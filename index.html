@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eclectic Art Lines — Indie Mobile Games &amp; Apps</title>
-  <meta name="description" content="Building the kind of apps people assume require an entire team: automation, privacy and real-world data. Independent full-cycle mobile developer from Istanbul — on Google Play." />
+  <meta name="description" content="Building the kind of apps people assume require an entire team: automation, privacy and real-world data. Games and apps by Eclectic Art Lines, on Google Play." />
   <meta property="og:title" content="Eclectic Art Lines — Indie Mobile Games &amp; Apps" />
-  <meta property="og:description" content="Building the kind of apps people assume require an entire team: automation, privacy and real-world data. One developer, Istanbul." />
+  <meta property="og:description" content="Building the kind of apps people assume require an entire team: automation, privacy and real-world data." />
   <meta property="og:image" content="https://eclecticartlines.github.io/banner.jpg" />
   <meta property="og:url" content="https://eclecticartlines.github.io/" />
   <meta name="theme-color" content="#1a2f5e" />
@@ -30,7 +30,40 @@
       <h2>What I make</h2>
       <p>Quiet games and useful little apps for Android. No sign-ups, no clutter — just open and play.</p>
 
-      <div class="apps-grid">
+      <div class="sort-row">
+        <span class="sort-label">Sort</span>
+        <button type="button" class="sort-btn is-on" data-sort="new" aria-pressed="true">Newest first</button>
+        <button type="button" class="sort-btn" data-sort="old" aria-pressed="false">Oldest first</button>
+      </div>
+
+      <div class="apps-grid" id="appsGrid">
+
+        <article class="app-card">
+          <div class="app-head">
+            <img src="icons/houseproof.png" alt="" class="app-icon" width="64" height="64" />
+            <div>
+              <span class="tag">Utility · App</span>
+              <h3>HouseProof</h3>
+            </div>
+          </div>
+          <span class="status soon">In development</span>
+        </article>
+
+        <article class="app-card">
+          <div class="app-head">
+            <img src="icons/contentslog.png" alt="" class="app-icon" width="64" height="64" />
+            <div>
+              <span class="tag">Utility · App</span>
+              <h3>Contents Log</h3>
+            </div>
+          </div>
+          <span class="status soon">In development</span>
+          <p>A room-by-room record of what you own — photos, dates and what each thing cost — so that an insurance claim starts from evidence instead of memory.</p>
+          <ul class="feats">
+            <li>Multilingual from the first release</li>
+            <li>Everything stays on the phone, no account</li>
+          </ul>
+        </article>
 
         <article class="app-card">
           <div class="app-head">
@@ -42,6 +75,11 @@
           </div>
           <span class="status">In testing</span>
           <p>Open a book in one language and read it in another. Translation and narration both run on the phone itself — follow one language while listening to the other, with nothing sent anywhere.</p>
+          <ul class="feats">
+            <li>PDF, EPUB, FB2 and TXT</li>
+            <li>Translation models downloaded once, then offline</li>
+            <li>Optional voice control, recognized on the device</li>
+          </ul>
           <div class="app-actions">
             <a class="small-link" href="privacy/transvoice.html">Privacy</a>
           </div>
@@ -56,7 +94,11 @@
             </div>
           </div>
           <span class="status">In testing</span>
-          <p>A stock book for jewellers: the showcase by karat, sales and profit, with the gold price entered as a single number. The shop’s phones sync directly over its own Wi‑Fi — no account, no cloud.</p>
+          <p>A stock book for jewellers: the showcase by karat, sales and profit, with the gold price entered as a single number.</p>
+          <ul class="feats">
+            <li>The shop’s phones sync over its own Wi‑Fi</li>
+            <li>No account, no cloud, nothing leaves the shop</li>
+          </ul>
           <div class="app-actions">
             <a class="small-link" href="privacy/kuyumcu.html">Privacy</a>
           </div>
@@ -71,7 +113,15 @@
             </div>
           </div>
           <span class="status live">On Google Play</span>
-          <p>A private notebook for your gold: grams, carat, where each piece came from and what it cost. Everything — photos included — stays on your phone, with no account and no cloud backup.</p>
+          <p>A private notebook for the gold you keep at home: grams, carat, where each piece came from and what it cost — and what it would fetch today.</p>
+          <ul class="feats">
+            <li>Value in your own yardstick — months of rent, or progress toward a goal</li>
+            <li>8 to 24 carat, with stones left out of the weight</li>
+            <li>Sold, gifted or lost pieces move to an archive instead of vanishing</li>
+            <li>Fingerprint, PIN or pattern lock, and one tap hides every figure</li>
+            <li>Encrypted on the phone; password-protected backup and PDF export</li>
+            <li>Five items free, then a single purchase</li>
+          </ul>
           <div class="app-actions">
             <a class="btn" href="https://play.google.com/store/apps/details?id=com.eclecticartlines.cekmecem" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
@@ -90,7 +140,14 @@
             </div>
           </div>
           <span class="status live">On Google Play</span>
-          <p>Turkish folk tales to read and to listen to, with narration streamed on demand. One single purchase opens the whole library — no accounts, no ads.</p>
+          <p>412 fairy tales and 55 hours of narration in fifteen collections — Keloğlan and Nasreddin Hoca, the Turkic world and the Silk Road, Grimm, Andersen and Aesop.</p>
+          <ul class="feats">
+            <li>Every text rewritten so nobody dies and the ending leaves hope</li>
+            <li>Sleep timer counts stories, not minutes</li>
+            <li>Choose by length when there isn’t much time</li>
+            <li>Downloaded once, then listens without internet</li>
+            <li>30 tales free, then a single purchase — no ads</li>
+          </ul>
           <div class="app-actions">
             <a class="btn" href="https://play.google.com/store/apps/details?id=com.eclecticartlines.turkmasallari" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
@@ -109,7 +166,16 @@
             </div>
           </div>
           <span class="status live">On Google Play</span>
-          <p>Photograph a page or open a PDF, EPUB or FB2 — and listen to it read aloud. Everything happens on your phone.</p>
+          <p>Photograph a page or open a PDF, EPUB or FB2 and listen to it. Built for the hard cases other readers refuse: scanned books, photocopies, out-of-print editions.</p>
+          <ul class="feats">
+            <li>Columns and two-page spreads read in the right order</li>
+            <li>Hyphens rejoined; page numbers, running heads and front matter dropped</li>
+            <li>An honest verdict on every photo — good, fair or poor — and how to retake it</li>
+            <li>Your own pronunciation list for words the voice keeps mangling</li>
+            <li>Works with TalkBack, for listening rather than reading</li>
+            <li>Recognition runs on the phone, offline, in 80+ languages</li>
+            <li>First 40 minutes free, then a single purchase — no ads</li>
+          </ul>
           <div class="app-actions">
             <a class="btn" href="https://play.google.com/store/apps/details?id=com.eclecticartlines.reader" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
@@ -128,7 +194,12 @@
             </div>
           </div>
           <span class="status live">On Google Play</span>
-          <p>A satisfying ASMR-style cleaning game. Carpets, tiles, doors — all covered in 21 kinds of mess: stains, streaks, footprints, hair, cobwebs and even flies. Scrub it all away and watch everything shine.</p>
+          <p>Every level hides something under the dirt — a vintage carpet, a copper pan, a stained-glass window. Swipe, and watch it appear layer by layer.</p>
+          <ul class="feats">
+            <li>327 levels in 9 collections</li>
+            <li>Five tools: brush, cloth, bucket, squeegee, sponge</li>
+            <li>No timers and no pressure; cleaned pictures fill an album</li>
+          </ul>
           <div class="app-actions">
             <a class="btn" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.cleanreveal" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
@@ -147,7 +218,14 @@
             </div>
           </div>
           <span class="status live">On Google Play</span>
-          <p>An adult coloring book with 166 hand-drawn pictures. Smart coloring fills the tiny details for you, and a finished picture becomes a postcard you can send. No ads.</p>
+          <p>166 hand-drawn pages in 8 collections — mandalas, flowers, mushrooms, crystals, wild and steampunk animals. Smart coloring finds the tiny details and fills them in one tap.</p>
+          <ul class="feats">
+            <li>You choose how small the details are and which palette fills them</li>
+            <li>See which colors will be used before you tap, and undo in one</li>
+            <li>A pipette picks any color straight out of the picture</li>
+            <li>Turn a finished page into a postcard with your own wish and send it</li>
+            <li>Offline, no ads, 11 languages</li>
+          </ul>
           <div class="app-actions">
             <a class="btn" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines.coloring" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
@@ -166,7 +244,14 @@
             </div>
           </div>
           <span class="status live">On Google Play</span>
-          <p>A calming jigsaw puzzle game with original artwork, or a puzzle made from a photo of your own. Pieces, patience, and quiet satisfaction. No ads.</p>
+          <p>Turn any photo from your gallery into a jigsaw puzzle, or take apart one of 340+ original pictures — around 60 of them paintings of mine.</p>
+          <ul class="feats">
+            <li>5×5 to 9×9, and the pieces are cut differently every time</li>
+            <li>Collections from palette-knife still lifes to steam-age robots</li>
+            <li>Pieces click into place, join into groups and move as one</li>
+            <li>A piece lost on the board wiggles and glows until you find it</li>
+            <li>Offline, no ads at all, 19 languages</li>
+          </ul>
           <div class="app-actions">
             <a class="btn" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
@@ -186,13 +271,14 @@
       <div>
         <p class="label">About</p>
         <h2>Building the kind of apps people assume require an entire team.</h2>
-        <p>Automation, privacy and real-world data — the three things that usually need a department each. Here they are the work of one person in Istanbul: the idea, the design, the code, the testing and the release.</p>
+        <p>Automation, privacy and real-world data — the three things that usually take a department each. Here they are one person’s work: the idea, the design, the code, the testing, the release, and the store listing written out in 24 languages.</p>
         <p>I come from graphic design and pre-press production, so I care a lot about how things look and feel: calm colors, clean screens, nothing that shouts at you. And because nothing leaves your phone, privacy isn’t a policy page — it’s how the apps are built.</p>
       </div>
       <ul class="facts">
         <li>Games built with Unity, apps with Flutter</li>
+        <li>Apps and store listings in 24 languages, written by hand</li>
         <li>No accounts or sign-ups in any of my apps</li>
-        <li>Each game links to the others — if you like one, try the next</li>
+        <li>Each app links to the others — if you like one, try the next</li>
       </ul>
     </div>
   </section>
@@ -244,6 +330,29 @@
     </nav>
     <p class="copy">© 2026 Eclectic Art Lines</p>
   </footer>
+
+  <script>
+    (function () {
+      var grid = document.getElementById('appsGrid');
+      if (!grid) return;
+      var cards = Array.prototype.slice.call(grid.querySelectorAll('.app-card'));
+      var btns = Array.prototype.slice.call(document.querySelectorAll('.sort-btn'));
+      function apply(dir) {
+        cards.forEach(function (card, i) {
+          card.style.order = (dir === 'old') ? (cards.length - i) : i;
+        });
+        btns.forEach(function (b) {
+          var on = b.getAttribute('data-sort') === dir;
+          b.classList.toggle('is-on', on);
+          b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+      }
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () { apply(b.getAttribute('data-sort')); });
+      });
+      apply('new');
+    })();
+  </script>
 
 </body>
 </html>
