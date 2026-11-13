@@ -9,350 +9,204 @@
   <meta property="og:description" content="Building the kind of apps people assume require an entire team: automation, privacy and real-world data." />
   <meta property="og:image" content="https://eclecticartlines.github.io/banner.jpg" />
   <meta property="og:url" content="https://eclecticartlines.github.io/" />
-  <meta name="theme-color" content="#1a2f5e" />
+  <meta name="theme-color" content="#16294F" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HERO -->
   <header class="hero">
     <picture>
       <source media="(max-width: 759px)" srcset="banner-mobile.jpg" />
-      <img src="banner.jpg" alt="Eclectic Art Lines — Ideas are cheap. Shipping is everything." class="hero-banner" width="2400" height="696" />
+      <img src="banner.jpg" alt="Eclectic Art Lines — Ideas are cheap. Shipping is everything." width="2400" height="696" />
     </picture>
   </header>
 
-  <!-- APPS -->
-  <section class="tint" id="apps">
+  <section id="apps">
     <div class="wrap">
-      <p class="label">Games &amp; apps</p>
-      <h2>What I make</h2>
-      <p>Quiet games and useful little apps for Android. No sign-ups, no clutter — just open and play.</p>
+      <p class="kicker">Games &amp; apps</p>
+      <h2>Ten things, built end to end</h2>
+      <p class="lede">Quiet games and useful little apps for Android. No sign-ups, no&nbsp;clutter — open and play</p>
 
-      <div class="sort-row">
-        <span class="sort-label">Sort</span>
-        <button type="button" class="sort-btn is-on" data-sort="new" aria-pressed="true">Newest first</button>
-        <button type="button" class="sort-btn" data-sort="old" aria-pressed="false">Oldest first</button>
-      </div>
+      <div class="apps">
 
-      <div class="apps-grid" id="appsGrid">
-
-        <article class="app-card">
-          <div class="app-head">
-            <img src="icons/houseproof.png" alt="" class="app-icon" width="64" height="64" />
-            <div>
-              <span class="tag">Utility · App</span>
-              <h3>HouseProof</h3>
-            </div>
+        <article class="app">
+          <div class="app-mark">
+            <span class="app-logo"><img src="icons/houseproof.png" alt="" width="34" height="34" /></span>
+            <span class="app-meta">Utility · In development</span>
           </div>
-          <span class="status soon">In development</span>
+          <h3><a href="apps/houseproof.html">HouseProof</a></h3>
+          <p class="app-lede">Proof about the home itself — its condition, what was repaired and when, kept with photos and dates.</p>
+          <p class="app-links"><a href="apps/houseproof.html">More →</a></p>
         </article>
-
-        <article class="app-card">
-          <div class="app-head">
-            <img src="icons/contentslog.png" alt="" class="app-icon" width="64" height="64" />
-            <div>
-              <span class="tag">Utility · App</span>
-              <h3>Contents Log</h3>
-            </div>
+        <article class="app">
+          <div class="app-mark">
+            <span class="app-logo"><img src="icons/contentslog.png" alt="" width="34" height="34" /></span>
+            <span class="app-meta">Utility · In development</span>
           </div>
-          <span class="status soon">In development</span>
-          <p>A room-by-room record of what you own — photos, dates and what each thing cost — so that an insurance claim starts from evidence instead of memory.</p>
-          <ul class="feats">
-            <li>Multilingual from the first release</li>
-            <li>Everything stays on the phone, no account</li>
-          </ul>
+          <h3><a href="apps/contents-log.html">Contents Log</a></h3>
+          <p class="app-lede">A room-by-room record of what you own — photos, dates and what each thing cost — so a claim starts from evidence instead of memory.</p>
+          <p class="app-links"><a href="apps/contents-log.html">More →</a></p>
         </article>
-
-        <article class="app-card">
-          <div class="app-head">
-            <img src="icons/transvoice.png" alt="" class="app-icon" width="64" height="64" />
-            <div>
-              <span class="tag">Reader · App</span>
-              <h3>Book Translator &amp; Read Aloud</h3>
-            </div>
+        <article class="app">
+          <div class="app-mark">
+            <span class="app-logo"><img src="icons/transvoice.png" alt="" width="34" height="34" /></span>
+            <span class="app-meta">Reader · In testing</span>
           </div>
-          <span class="status">In testing</span>
-          <p>Open a book in one language and read it in another. Translation and narration both run on the phone itself — follow one language while listening to the other, with nothing sent anywhere.</p>
-          <ul class="feats">
-            <li>PDF, EPUB, FB2 and TXT</li>
-            <li>Translation models downloaded once, then offline</li>
-            <li>Optional voice control, recognized on the device</li>
-          </ul>
-          <div class="app-actions">
-            <a class="small-link" href="privacy/transvoice.html">Privacy</a>
-          </div>
+          <h3><a href="apps/book-translator.html">Book Translator &amp; Read Aloud</a></h3>
+          <p class="app-lede">Open a book in one language and read it in another. Translation and narration both run on the phone itself, with nothing sent anywhere.</p>
+          <p class="app-links"><a href="apps/book-translator.html">More →</a></p>
         </article>
-
-        <article class="app-card">
-          <div class="app-head">
-            <img src="icons/kuyumcu.png" alt="" class="app-icon" width="64" height="64" />
-            <div>
-              <span class="tag">Business · App</span>
-              <h3>Kuyumcu Altın Stok Defteri</h3>
-            </div>
+        <article class="app">
+          <div class="app-mark">
+            <span class="app-logo"><img src="icons/kuyumcu.png" alt="" width="34" height="34" /></span>
+            <span class="app-meta">Business · In testing</span>
           </div>
-          <span class="status">In testing</span>
-          <p>A stock book for jewellers: the showcase by karat, sales and profit, with the gold price entered as a single number.</p>
-          <ul class="feats">
-            <li>The shop’s phones sync over its own Wi‑Fi</li>
-            <li>No account, no cloud, nothing leaves the shop</li>
-          </ul>
-          <div class="app-actions">
-            <a class="small-link" href="privacy/kuyumcu.html">Privacy</a>
-          </div>
+          <h3><a href="apps/kuyumcu.html">Kuyumcu Altın Stok Defteri</a></h3>
+          <p class="app-lede">A stock book for jewellers: the showcase by karat, sales and profit, with the gold price entered as a single number.</p>
+          <p class="app-links"><a href="apps/kuyumcu.html">More →</a></p>
         </article>
-
-        <article class="app-card">
-          <div class="app-head">
-            <img src="icons/altin.png" alt="" class="app-icon" width="64" height="64" />
-            <div>
-              <span class="tag">Utility · App</span>
-              <h3>Altın Takip Defteri</h3>
-            </div>
+        <article class="app">
+          <div class="app-mark">
+            <span class="app-logo"><img src="icons/altin.png" alt="" width="34" height="34" /></span>
+            <span class="app-meta">Utility · On Google Play</span>
           </div>
-          <span class="status live">On Google Play</span>
-          <p>A private notebook for the gold you keep at home: grams, carat, where each piece came from and what it cost — and what it would fetch today.</p>
-          <ul class="feats">
-            <li>Value in your own yardstick — months of rent, or progress toward a goal</li>
-            <li>8 to 24 carat, with stones left out of the weight</li>
-            <li>Sold, gifted or lost pieces move to an archive instead of vanishing</li>
-            <li>Fingerprint, PIN or pattern lock, and one tap hides every figure</li>
-            <li>Encrypted on the phone; password-protected backup and PDF export</li>
-            <li>Five items free, then a single purchase</li>
-          </ul>
-          <div class="app-actions">
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.eclecticartlines.cekmecem" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
-              Google Play
-            </a>
-            <a class="small-link" href="privacy/altin.html">Privacy</a>
-          </div>
+          <h3><a href="apps/altin-takip-defteri.html">Altın Takip Defteri</a></h3>
+          <p class="app-lede">A private notebook for the gold you keep at home: grams, carat, where each piece came from and what it cost — and what it would fetch today.</p>
+          <p class="app-links"><a href="apps/altin-takip-defteri.html">More →</a> <a href="https://play.google.com/store/apps/details?id=com.eclecticartlines.cekmecem" target="_blank" rel="noopener">Google Play</a></p>
         </article>
-
-        <article class="app-card">
-          <div class="app-head">
-            <img src="icons/masallar.png" alt="" class="app-icon" width="64" height="64" />
-            <div>
-              <span class="tag">Stories · App</span>
-              <h3>412 Sesli Masal İnternetsiz</h3>
-            </div>
+        <article class="app">
+          <div class="app-mark">
+            <span class="app-logo"><img src="icons/masallar.png" alt="" width="34" height="34" /></span>
+            <span class="app-meta">Stories · On Google Play</span>
           </div>
-          <span class="status live">On Google Play</span>
-          <p>412 fairy tales and 55 hours of narration in fifteen collections — Keloğlan and Nasreddin Hoca, the Turkic world and the Silk Road, Grimm, Andersen and Aesop.</p>
-          <ul class="feats">
-            <li>Every text rewritten so nobody dies and the ending leaves hope</li>
-            <li>Sleep timer counts stories, not minutes</li>
-            <li>Choose by length when there isn’t much time</li>
-            <li>Downloaded once, then listens without internet</li>
-            <li>30 tales free, then a single purchase — no ads</li>
-          </ul>
-          <div class="app-actions">
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.eclecticartlines.turkmasallari" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
-              Google Play
-            </a>
-            <a class="small-link" href="privacy/masallar.html">Privacy</a>
-          </div>
+          <h3><a href="apps/masallar.html">412 Sesli Masal İnternetsiz</a></h3>
+          <p class="app-lede">412 fairy tales and 55 hours of narration in fifteen collections — Keloğlan and Nasreddin Hoca, the Turkic world and the Silk Road, Grimm, Andersen, Aesop.</p>
+          <p class="app-links"><a href="apps/masallar.html">More →</a> <a href="https://play.google.com/store/apps/details?id=com.eclecticartlines.turkmasallari" target="_blank" rel="noopener">Google Play</a></p>
         </article>
-
-        <article class="app-card">
-          <div class="app-head">
-            <img src="icons/reader.png" alt="" class="app-icon" width="64" height="64" />
-            <div>
-              <span class="tag">Reader · App</span>
-              <h3>Photo Voice: PDF, Image Reader</h3>
-            </div>
+        <article class="app">
+          <div class="app-mark">
+            <span class="app-logo"><img src="icons/reader.png" alt="" width="34" height="34" /></span>
+            <span class="app-meta">Reader · On Google Play</span>
           </div>
-          <span class="status live">On Google Play</span>
-          <p>Photograph a page or open a PDF, EPUB or FB2 and listen to it. Built for the hard cases other readers refuse: scanned books, photocopies, out-of-print editions.</p>
-          <ul class="feats">
-            <li>Columns and two-page spreads read in the right order</li>
-            <li>Hyphens rejoined; page numbers, running heads and front matter dropped</li>
-            <li>An honest verdict on every photo — good, fair or poor — and how to retake it</li>
-            <li>Your own pronunciation list for words the voice keeps mangling</li>
-            <li>Works with TalkBack, for listening rather than reading</li>
-            <li>Recognition runs on the phone, offline, in 80+ languages</li>
-            <li>First 40 minutes free, then a single purchase — no ads</li>
-          </ul>
-          <div class="app-actions">
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.eclecticartlines.reader" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
-              Google Play
-            </a>
-            <a class="small-link" href="privacy/reader.html">Privacy</a>
-          </div>
+          <h3><a href="apps/photo-voice.html">Photo Voice: PDF, Image Reader</a></h3>
+          <p class="app-lede">Photograph a page or open a PDF and listen to it. Built for the hard cases other readers refuse: scanned books, photocopies, out-of-print editions.</p>
+          <p class="app-links"><a href="apps/photo-voice.html">More →</a> <a href="https://play.google.com/store/apps/details?id=com.eclecticartlines.reader" target="_blank" rel="noopener">Google Play</a></p>
         </article>
-
-        <article class="app-card">
-          <div class="app-head">
-            <img src="icons/cozyclean.png" alt="" class="app-icon" width="64" height="64" />
-            <div>
-              <span class="tag">Casual · Game</span>
-              <h3>Cozy Clean Reveal</h3>
-            </div>
+        <article class="app">
+          <div class="app-mark">
+            <span class="app-logo"><img src="icons/cozyclean.png" alt="" width="34" height="34" /></span>
+            <span class="app-meta">Casual · On Google Play</span>
           </div>
-          <span class="status live">On Google Play</span>
-          <p>Every level hides something under the dirt — a vintage carpet, a copper pan, a stained-glass window. Swipe, and watch it appear layer by layer.</p>
-          <ul class="feats">
-            <li>327 levels in 9 collections</li>
-            <li>Five tools: brush, cloth, bucket, squeegee, sponge</li>
-            <li>No timers and no pressure; cleaned pictures fill an album</li>
-          </ul>
-          <div class="app-actions">
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.cleanreveal" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
-              Google Play
-            </a>
-            <a class="small-link" href="privacy/cozyclean.html">Privacy</a>
-          </div>
+          <h3><a href="apps/cozy-clean.html">Cozy Clean Reveal</a></h3>
+          <p class="app-lede">Every level hides something under the dirt — a vintage carpet, a copper pan, a stained-glass window. Swipe, and watch it appear layer by layer.</p>
+          <p class="app-links"><a href="apps/cozy-clean.html">More →</a> <a href="https://play.google.com/store/apps/details?id=com.tanyadoncova.cleanreveal" target="_blank" rel="noopener">Google Play</a></p>
         </article>
-
-        <article class="app-card">
-          <div class="app-head">
-            <img src="icons/coloring.png" alt="" class="app-icon" width="64" height="64" />
-            <div>
-              <span class="tag">Coloring · Game</span>
-              <h3>Smart Coloring Book: Postcards</h3>
-            </div>
+        <article class="app">
+          <div class="app-mark">
+            <span class="app-logo"><img src="icons/coloring.png" alt="" width="34" height="34" /></span>
+            <span class="app-meta">Coloring · On Google Play</span>
           </div>
-          <span class="status live">On Google Play</span>
-          <p>166 hand-drawn pages in 8 collections — mandalas, flowers, mushrooms, crystals, wild and steampunk animals. Smart coloring finds the tiny details and fills them in one tap.</p>
-          <ul class="feats">
-            <li>You choose how small the details are and which palette fills them</li>
-            <li>See which colors will be used before you tap, and undo in one</li>
-            <li>A pipette picks any color straight out of the picture</li>
-            <li>Turn a finished page into a postcard with your own wish and send it</li>
-            <li>Offline, no ads, 11 languages</li>
-          </ul>
-          <div class="app-actions">
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines.coloring" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
-              Google Play
-            </a>
-            <a class="small-link" href="privacy/coloring.html">Privacy</a>
-          </div>
+          <h3><a href="apps/smart-coloring.html">Smart Coloring Book: Postcards</a></h3>
+          <p class="app-lede">166 hand-drawn pages in 8 collections. Smart coloring finds the tiny details and fills them in one tap — then the finished page becomes a postcard.</p>
+          <p class="app-links"><a href="apps/smart-coloring.html">More →</a> <a href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines.coloring" target="_blank" rel="noopener">Google Play</a></p>
         </article>
-
-        <article class="app-card">
-          <div class="app-head">
-            <img src="icons/puzzle.png" alt="" class="app-icon" width="64" height="64" />
-            <div>
-              <span class="tag">Puzzle · Game</span>
-              <h3>Art Jigsaw: Photo Puzzle Maker</h3>
-            </div>
+        <article class="app">
+          <div class="app-mark">
+            <span class="app-logo"><img src="icons/puzzle.png" alt="" width="34" height="34" /></span>
+            <span class="app-meta">Puzzle · On Google Play</span>
           </div>
-          <span class="status live">On Google Play</span>
-          <p>Turn any photo from your gallery into a jigsaw puzzle, or take apart one of 340+ original pictures — around 60 of them paintings of mine.</p>
-          <ul class="feats">
-            <li>5×5 to 9×9, and the pieces are cut differently every time</li>
-            <li>Collections from palette-knife still lifes to steam-age robots</li>
-            <li>Pieces click into place, join into groups and move as one</li>
-            <li>A piece lost on the board wiggles and glows until you find it</li>
-            <li>Offline, no ads at all, 19 languages</li>
-          </ul>
-          <div class="app-actions">
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.3 12l-9.7 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm10.8 9.1 2.7-2.8L5.2 1.4l9.2 9.5zm0 2.2-9.2 9.5 11.9-6.7-2.7-2.8zm6.9-2.1-3-1.7-3 3.1 3 3.1 3-1.7c.9-.5.9-2.3 0-2.8z"/></svg>
-              Google Play
-            </a>
-            <a class="small-link" href="privacy/puzzle.html">Privacy</a>
-          </div>
+          <h3><a href="apps/art-jigsaw.html">Art Jigsaw: Photo Puzzle Maker</a></h3>
+          <p class="app-lede">Turn any photo from your gallery into a jigsaw puzzle, or take apart one of 340+ original pictures — around sixty of them paintings of mine.</p>
+          <p class="app-links"><a href="apps/art-jigsaw.html">More →</a> <a href="https://play.google.com/store/apps/details?id=com.tanyadoncova.eclecticartlines" target="_blank" rel="noopener">Google Play</a></p>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <section id="how">
+    <div class="wrap">
+      <p class="kicker">Full cycle</p>
+      <h2>What the entire team would have done</h2>
+      <p class="lede">Four departments, one desk</p>
+
+      <div class="steps">
+        <article class="step s1">
+          <span class="num" aria-hidden="true">1</span>
+          <h3>Idea</h3>
+          <p>I build what I needed myself and couldn’t find: a box for the gold, a scanned book that reads itself aloud, a record of what is in the house.</p>
+        </article>
+
+        <article class="step s2">
+          <span class="num" aria-hidden="true">2</span>
+          <h3>Design</h3>
+          <p>Screens, icon sets, store graphics. Seventeen years of layout and pre-press before any of this — calm colours, large type, nothing that shouts.</p>
+        </article>
+
+        <article class="step s3">
+          <span class="num" aria-hidden="true">3</span>
+          <h3>Build</h3>
+          <p>Unity for the games, Flutter for the apps. Everything on the device: no server to go down, no account to lose, no cloud to trust.</p>
+        </article>
+
+        <article class="step s4">
+          <span class="num" aria-hidden="true">4</span>
+          <h3>Ship</h3>
+          <p>Listing, screenshots and description written out by hand in 24 languages. Then the support letters — answered by the person who wrote the code.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section id="about">
-    <div class="wrap about-grid">
-      <div>
-        <p class="label">About</p>
-        <h2>Building the kind of apps people assume require an entire team</h2>
-        <p>Automation, privacy and real-world data — the three things that usually take a department each. Here they are one person’s work: the idea, the design, the code, the testing, the release, and the store listing written out in 24 languages.</p>
-        <p>I come from graphic design and pre-press production, so I care a lot about how things look and feel: calm colors, clean screens, nothing that shouts at you. And because nothing leaves your phone, privacy isn’t a policy page — it’s how the apps are built.</p>
-      </div>
-      <ul class="facts">
-        <li>Games built with Unity, apps with Flutter</li>
-        <li>Apps and store listings in 24 languages, written by hand</li>
-        <li>No accounts or sign-ups in any of my apps</li>
-        <li>Each app links to the others — if you like one, try the next</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- HELP -->
-  <section class="tint" id="help">
     <div class="wrap">
-      <p class="label">Help</p>
-      <h2>Something not working?</h2>
-      <p>Found a bug, lost your progress, or have an idea for a game? I read every message myself.</p>
-      <div class="contact-row">
-        <a class="btn" href="support.html">Support &amp; FAQ</a>
-        <a class="btn ghost" href="destek.html">Türkçe destek</a>
-        <a class="btn ghost" href="mailto:eclecticartlines@gmail.com">Write to me</a>
+      <p class="kicker">About</p>
+      <h2>Building the kind of apps people assume require an entire team</h2>
+
+      <div class="about">
+        <p>Automation, privacy and real-world data — the three things that usually take a department each. Here they are one person’s work: the idea, the design, the code, the testing, the release, and the store listing written out in 24 languages.</p>
+        <p>I come from graphic design and pre-press production, so I care a lot about how things look and feel: calm colours, clean screens, nothing that shouts at you. And because nothing leaves your phone, privacy isn’t a policy page — it’s how the apps are built.</p>
+        <ul class="facts">
+          <li>Games built with Unity, apps with Flutter</li>
+          <li>Apps and store listings in 24 languages, written by hand</li>
+          <li>No accounts or sign-ups in any of my apps</li>
+          <li>Each app links to the others — if you like one, try the next</li>
+        </ul>
+        <div class="row">
+          <a class="btn" href="support.html">Support &amp; FAQ</a>
+          <a class="btn ghost" href="mailto:eclecticartlines@gmail.com">Write to me</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <img src="logo.png" alt="Eclectic Art Lines" class="footer-logo" width="1769" height="647" />
-
-    <div class="social">
-      <a href="https://www.instagram.com/eclecticartlines/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        Instagram
-      </a>
-      <a href="https://www.tiktok.com/@eclectic.art.lines" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>
-        TikTok
-      </a>
-      <a href="mailto:eclecticartlines@gmail.com">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        eclecticartlines@gmail.com
-      </a>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <h4>Eclectic Art Lines</h4>
+          <p class="foot-tag">Ideas are cheap. Shipping is everything.</p>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="destek.html">Türkçe destek</a></li>
+            <li><a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/eclecticartlines/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@eclectic.art.lines">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-note">Each app links to its own privacy policy from its page. © 2026 Eclectic Art Lines</p>
     </div>
-
-    <nav>
-      <a href="support.html">Support</a>
-      <a href="destek.html">Destek</a>
-      <a href="privacy/transvoice.html">Privacy — Book Translator &amp; Read Aloud</a>
-      <a href="privacy/kuyumcu.html">Privacy — Kuyumcu Altın Stok Defteri</a>
-      <a href="privacy/altin.html">Privacy — Altın Takip Defteri</a>
-      <a href="privacy/masallar.html">Privacy — 412 Sesli Masal İnternetsiz</a>
-      <a href="privacy/reader.html">Privacy — Photo Voice: PDF, Image Reader</a>
-      <a href="privacy/cozyclean.html">Privacy — Cozy Clean</a>
-      <a href="privacy/coloring.html">Privacy — Coloring</a>
-      <a href="privacy/puzzle.html">Privacy — Puzzle</a>
-    </nav>
-    <p class="copy">© 2026 Eclectic Art Lines</p>
   </footer>
-
-  <script>
-    (function () {
-      var grid = document.getElementById('appsGrid');
-      if (!grid) return;
-      var cards = Array.prototype.slice.call(grid.querySelectorAll('.app-card'));
-      var btns = Array.prototype.slice.call(document.querySelectorAll('.sort-btn'));
-      function apply(dir) {
-        cards.forEach(function (card, i) {
-          card.style.order = (dir === 'old') ? (cards.length - i) : i;
-        });
-        btns.forEach(function (b) {
-          var on = b.getAttribute('data-sort') === dir;
-          b.classList.toggle('is-on', on);
-          b.setAttribute('aria-pressed', on ? 'true' : 'false');
-        });
-      }
-      btns.forEach(function (b) {
-        b.addEventListener('click', function () { apply(b.getAttribute('data-sort')); });
-      });
-      apply('new');
-    })();
-  </script>
 
 </body>
 </html>
