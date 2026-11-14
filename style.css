@@ -182,12 +182,13 @@ p:last-child { margin-bottom: 0; }
 /* Only when the four cells stand side by side does a numeral have a darker
    neighbour to ride onto. Offsets are per digit, in em, so that 65% of each
    glyph's ink — not of its advance width — sits past the edge.
-   Numeral 1 lands on white paper instead of a neighbour, so it is toned to
-   #D5DBE8: contrast 1.39 against the page, matching the 1.25–1.53 the others
-   have against theirs. Its own dark navy would have been 15.24. */
+   Every numeral carries its own panel's colour, numeral 1 included, even
+   though it lands on white paper rather than on a neighbour: the rule is
+   the rule. That puts it at contrast 15.24 against the page where the
+   others sit at 1.25–1.53 against theirs. */
 @media (min-width: 60rem) {
   .num { left: 0; opacity: 1; }
-  .s1 .num { transform: translateX(-0.338em); color: #D5DBE8; }
+  .s1 .num { transform: translateX(-0.338em); color: #142544; }
   .s2 .num { transform: translateX(-0.344em); color: #1D3463; }
   .s3 .num { transform: translateX(-0.344em); color: var(--blue); }
   .s4 .num { transform: translateX(-0.347em); color: var(--blue-light); }
