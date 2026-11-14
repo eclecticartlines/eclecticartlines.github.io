@@ -6,57 +6,14 @@
   <title>Privacy Policy — Art Jigsaw: Photo Puzzle Maker</title>
   <meta name="description" content="Privacy policy for the Art Jigsaw: Photo Puzzle Maker mobile app by Eclectic Art Lines. No ads, photos processed on your device, one-time purchase." />
   <link rel="icon" type="image/png" href="../favicon.png" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --blue: #28468C; --blue-dark: #1a2f5e; --cream: #FFF0BE; }
-    body { font-family: Georgia, "Noto Serif", "DejaVu Serif", serif; background: #fff; color: var(--blue-dark); line-height: 1.8; }
-    header {
-      background: var(--blue);
-      padding: clamp(1.1rem, 5vw, 2rem);
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-    header img { height: 40px; }
-    header a { color: var(--cream); text-decoration: none; font-size: 0.85rem; opacity: 0.8; }
-    header a:hover { opacity: 1; }
-    nav.langs {
-      max-width: 720px;
-      margin: 2rem auto 0;
-      padding: 0 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-    nav.langs button {
-      font: inherit;
-      font-size: 0.82rem;
-      line-height: 1.4;
-      padding: 0.35rem 0.7rem;
-      border: 1px solid #ccd3e2;
-      border-radius: 999px;
-      background: #fff;
-      color: var(--blue);
-      cursor: pointer;
-    }
-    nav.langs button:hover { border-color: var(--blue); }
-    nav.langs button[aria-current="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
-    main { max-width: 720px; margin: 0 auto; padding: clamp(1.75rem, 6vw, 2.5rem) clamp(1.1rem, 5vw, 2rem) clamp(2.5rem, 8vw, 4rem); }
-    h1 { font-size: 1.8rem; font-weight: normal; margin-bottom: 0.5rem; color: var(--blue-dark); }
-    .meta { font-size: 0.8rem; color: #888; margin-bottom: 3rem; }
-    h2 { font-size: 1.1rem; font-weight: normal; color: var(--blue); margin: 2.5rem 0 0.75rem; }
-    p, li { font-size: 0.98rem; color: #2a3a5c; max-width: 64ch; margin-bottom: 0.75rem; }
-    ul { padding-left: 1.5rem; }
-    a { color: var(--blue); }
-    footer { text-align: center; padding: 2rem; font-size: 0.78rem; color: #aaa; }
-    main[hidden] { display: none; }
-  </style>
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <header>
-    <img src="../logo.png" alt="Eclectic Art Lines" />
-    <a href="../index.html">← Back to main page</a>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="mark" href="../index.html">Eclectic Art Lines</a>
+      <a class="back" href="../index.html">← Back to main page</a>
+    </div>
   </header>
 
   <nav class="langs" aria-label="Language">
@@ -74,7 +31,7 @@
   </nav>
 
 
-  <main data-lang="en" lang="en">
+  <main class="doc" data-lang="en" lang="en">
     <h1>Privacy Policy</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Last updated: October 2026</p>
 
@@ -126,7 +83,7 @@
     <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <main data-lang="ru" lang="ru" hidden>
+  <main class="doc" data-lang="ru" lang="ru" hidden>
     <h1>Политика конфиденциальности</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Последнее обновление: октябрь 2026</p>
 
@@ -178,7 +135,7 @@
     <p>Если у вас есть вопросы об этой Политике конфиденциальности, напишите нам: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <main data-lang="kk" lang="kk" hidden>
+  <main class="doc" data-lang="kk" lang="kk" hidden>
     <h1>Құпиялылық саясаты</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Соңғы жаңарту: 2026 жылғы қазан</p>
 
@@ -230,7 +187,7 @@
     <p>Осы Құпиялылық саясаты туралы сұрағыңыз болса, бізге жазыңыз: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <main data-lang="tr" lang="tr" hidden>
+  <main class="doc" data-lang="tr" lang="tr" hidden>
     <h1>Gizlilik Politikası</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Son güncelleme: Ekim 2026</p>
 
@@ -282,7 +239,7 @@
     <p>Bu Gizlilik Politikası hakkında sorularınız varsa bize yazın: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <main data-lang="de" lang="de" hidden>
+  <main class="doc" data-lang="de" lang="de" hidden>
     <h1>Datenschutzerklärung</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Zuletzt aktualisiert: Oktober 2026</p>
 
@@ -334,7 +291,7 @@
     <p>Bei Fragen zu dieser Datenschutzerklärung schreiben Sie uns: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <main data-lang="fr" lang="fr" hidden>
+  <main class="doc" data-lang="fr" lang="fr" hidden>
     <h1>Politique de confidentialité</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Dernière mise à jour : octobre 2026</p>
 
@@ -386,7 +343,7 @@
     <p>Pour toute question sur cette Politique de confidentialité, écrivez-nous : <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <main data-lang="es" lang="es" hidden>
+  <main class="doc" data-lang="es" lang="es" hidden>
     <h1>Política de Privacidad</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Última actualización: octubre de 2026</p>
 
@@ -438,7 +395,7 @@
     <p>Si tienes alguna pregunta sobre esta Política de Privacidad, escríbenos a: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <main data-lang="it" lang="it" hidden>
+  <main class="doc" data-lang="it" lang="it" hidden>
     <h1>Informativa sulla privacy</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Ultimo aggiornamento: ottobre 2026</p>
 
@@ -490,7 +447,7 @@
     <p>Per domande su questa Informativa sulla privacy scrivici a: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <main data-lang="pt" lang="pt" hidden>
+  <main class="doc" data-lang="pt" lang="pt" hidden>
     <h1>Política de Privacidade</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Última atualização: outubro de 2026</p>
 
@@ -542,7 +499,7 @@
     <p>Se tiver dúvidas sobre esta Política de Privacidade, escreva para: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <main data-lang="ro" lang="ro" hidden>
+  <main class="doc" data-lang="ro" lang="ro" hidden>
     <h1>Politica de confidențialitate</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Ultima actualizare: octombrie 2026</p>
 
@@ -594,7 +551,7 @@
     <p>Dacă ai întrebări despre această Politică de confidențialitate, scrie-ne la: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <main data-lang="id" lang="id" hidden>
+  <main class="doc" data-lang="id" lang="id" hidden>
     <h1>Kebijakan Privasi</h1>
     <p class="meta">Art Jigsaw: Photo Puzzle Maker &nbsp;·&nbsp; Terakhir diperbarui: Oktober 2026</p>
 
@@ -646,13 +603,15 @@
     <p>Jika ada pertanyaan tentang Kebijakan Privasi ini, hubungi kami di: <a href="mailto:eclecticartlines@gmail.com">eclecticartlines@gmail.com</a></p>
   </main>
 
-  <footer>© 2026 Eclectic Art Lines</footer>
+  <footer>
+    <div class="wrap"><p class="copy">© 2026 Eclectic Art Lines</p></div>
+  </footer>
 
   <script>
     (function () {
       var sections = Array.prototype.slice.call(document.querySelectorAll('main[data-lang]'));
       var buttons = Array.prototype.slice.call(document.querySelectorAll('nav.langs button'));
-      var backLink = document.querySelector('header a');
+      var backLink = document.querySelector('header a.back');
       var backText = {"en": "← Back to main page", "ru": "← На главную", "kk": "← Басты бетке", "tr": "← Ana sayfaya dön", "de": "← Zur Startseite", "fr": "← Retour à l'accueil", "es": "← Volver a la página principal", "it": "← Torna alla pagina principale", "pt": "← Voltar à página principal", "ro": "← Înapoi la pagina principală", "id": "← Kembali ke halaman utama"};
       var available = sections.map(function (s) { return s.getAttribute('data-lang'); });
 
