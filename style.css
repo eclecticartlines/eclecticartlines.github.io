@@ -164,22 +164,34 @@ p:last-child { margin-bottom: 0; }
 @media (min-width: 40rem) { .steps { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 60rem) { .steps { grid-template-columns: repeat(4, 1fr); } }
 
-.step { position: relative; padding: var(--u3) var(--u) var(--u2); color: var(--cream); }
+.step { position: relative; padding: 7rem var(--u) var(--u2); color: var(--cream); }
+@media (min-width: 60rem) { .step { padding-top: var(--u3); } }
 .s1 { background: #142544; }
 .s2 { background: #1D3463; }
 .s3 { background: var(--blue); }
 .s4 { background: var(--blue-light); }
 
 .num {
-  position: absolute; top: 0.25rem; left: 0; transform: translateX(-70%);
+  position: absolute; top: 0.25rem; left: var(--u);
   font-family: 'Source Serif 4', Georgia, serif;
   font-weight: 600; font-size: 8.75rem; line-height: 0.8;   /* 140 = 5 x 28 */
   letter-spacing: -0.05em; pointer-events: none; user-select: none;
+  color: var(--cream); opacity: 0.16;
 }
-.s1 .num { color: #142544; }
-.s2 .num { color: #1D3463; }
-.s3 .num { color: var(--blue); }
-.s4 .num { color: var(--blue-light); }
+
+/* Only when the four cells stand side by side does a numeral have a darker
+   neighbour to ride onto. Offsets are per digit, in em, so that 65% of each
+   glyph's ink — not of its advance width — sits past the edge.
+   Numeral 1 lands on white paper instead of a neighbour, so it is toned to
+   #D5DBE8: contrast 1.39 against the page, matching the 1.25–1.53 the others
+   have against theirs. Its own dark navy would have been 15.24. */
+@media (min-width: 60rem) {
+  .num { left: 0; opacity: 1; }
+  .s1 .num { transform: translateX(-0.338em); color: #D5DBE8; }
+  .s2 .num { transform: translateX(-0.344em); color: #1D3463; }
+  .s3 .num { transform: translateX(-0.344em); color: var(--blue); }
+  .s4 .num { transform: translateX(-0.347em); color: var(--blue-light); }
+}
 
 .step h3 { color: var(--cream); margin-bottom: var(--u-h); position: relative; }
 .step p {
