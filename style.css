@@ -166,10 +166,10 @@ p:last-child { margin-bottom: 0; }
 
 .step { position: relative; padding: 7rem var(--u) var(--u2); color: var(--cream); }
 @media (min-width: 60rem) { .step { padding-top: var(--u3); } }
-.s1 { background: #142544; }
-.s2 { background: #1D3463; }
-.s3 { background: var(--blue); }
-.s4 { background: var(--blue-light); }
+.s1 { background: var(--blue-light); }
+.s2 { background: var(--blue); }
+.s3 { background: #1D3463; }
+.s4 { background: #142544; }
 
 .num {
   position: absolute; top: 0.25rem; left: var(--u);
@@ -182,16 +182,17 @@ p:last-child { margin-bottom: 0; }
 /* Only when the four cells stand side by side does a numeral have a darker
    neighbour to ride onto. Offsets are per digit, in em, so that 65% of each
    glyph's ink — not of its advance width — sits past the edge.
-   Every numeral carries its own panel's colour, numeral 1 included, even
-   though it lands on white paper rather than on a neighbour: the rule is
-   the rule. That puts it at contrast 15.24 against the page where the
-   others sit at 1.25–1.53 against theirs. */
+   The ramp runs light to dark, so a numeral — always its own panel's
+   colour — is darker than the neighbour it rides onto. Numeral 1 lands on
+   white paper: contrast 5.57, against 1.25–1.53 for the others. Flipping
+   the ramp brought that down from 15.24; it cannot go lower while the
+   first panel stays dark enough to carry cream text. */
 @media (min-width: 60rem) {
   .num { left: 0; opacity: 1; }
-  .s1 .num { transform: translateX(-0.338em); color: #142544; }
-  .s2 .num { transform: translateX(-0.344em); color: #1D3463; }
-  .s3 .num { transform: translateX(-0.344em); color: var(--blue); }
-  .s4 .num { transform: translateX(-0.347em); color: var(--blue-light); }
+  .s1 .num { transform: translateX(-0.338em); color: var(--blue-light); }
+  .s2 .num { transform: translateX(-0.344em); color: var(--blue); }
+  .s3 .num { transform: translateX(-0.344em); color: #1D3463; }
+  .s4 .num { transform: translateX(-0.347em); color: #142544; }
 }
 
 .step h3 { color: var(--cream); margin-bottom: var(--u-h); position: relative; }
